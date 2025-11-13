@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HairDef>
+		<defName>CuriosityBot_CleoCut0</defName>
+		<label>CleoCutElder</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/CleoCut0</texPath>
+		<styleTags>
+			<li>Royal</li>
+		</styleTags>
+	</HairDef>
+  <HairDef>
+    <defName>CuriosityBot_CleoCutA</defName>
+    <label>CleoCutA</label>
+    <styleGender>Female</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/CleoCutA</texPath>
+    <styleTags>
+    <li>Tribal</li>
+    <li>Royal</li>
+	<li>HairShort</li>
+    </styleTags>
+  </HairDef>
+    <HairDef>
+    <defName>CuriosityBot_CleoCutB</defName>
+    <label>CleoCutB</label>
+    <styleGender>Female</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/CleoCutB</texPath>
+    <styleTags>
+    <li>Tribal</li>
+    <li>Royal</li>
+	<li>HairShort</li>
+    </styleTags>
+  </HairDef>
+</Defs>

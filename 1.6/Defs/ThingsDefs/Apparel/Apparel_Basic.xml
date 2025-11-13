@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelMakeableBase">
+    
+    <defName>CuriosityBot_TigerPanties</defName>
+    <label>TigerPanties</label>
+    <description>These panties exude the spirit of a brave tiger. For some reason, they seem to instill courage.</description>
+	  <techLevel>Neolithic</techLevel>
+	  
+    <graphicData>
+      <texPath>Things/Apparel/TigerPanties_Icon</texPath> 
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(255, 255, 255)</color>
+    </graphicData>
+
+   <stuffCategories>
+   <li>Leathery</li>
+   </stuffCategories>
+
+   <costStuffCount>50</costStuffCount>
+
+  <statBases>
+   <MaxHitPoints>100</MaxHitPoints>
+   <MarketValue>50</MarketValue>
+   <Mass>0.1</Mass>
+   <EquipDelay>1.0</EquipDelay>
+   <WorkToMake>2000</WorkToMake> 
+   
+   <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+   <ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+   <Insulation_Cold>0.5</Insulation_Cold>
+   <Insulation_Heat>0.2</Insulation_Heat>
+   <StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+   <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+   <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+   <Insulation_Heat>3.0</Insulation_Heat>
+   <MoveSpeed>0.30</MoveSpeed>
+  </statBases>
+
+  <recipeMaker>
+    <researchPrerequisite>ComplexClothing</researchPrerequisite>
+	  <recipeUsers>
+		  <li>CuriosityBot_Spot</li>
+		  <li>CraftingSpot</li>
+		  <li>FueledSmithy</li>
+	  </recipeUsers>
+  </recipeMaker>
+
+    
+  <apparel>
+
+	  <tags>
+		  <li>Neolithic</li>
+		  <li>Cleo_Apparel</li>
+	  </tags>
+	  
+     <bodyPartGroups> <li>Legs</li> </bodyPartGroups>
+     <layers> <li>OnSkin</li> </layers>
+ 	 <countsAsClothingForNudity>false</countsAsClothingForNudity>
+     <wornGraphicPath>Things/Apparel/TigerPanties/TigerPanties</wornGraphicPath>
+	  <useWornGraphicMask>false</useWornGraphicMask>
+  </apparel>
+
+	  <thingCategories>
+	    	<li>Apparel</li>
+	  </thingCategories>
+
+	  <colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			  <li>
+				  <weight>0.05</weight>
+				  <only>(255,255,255)</only>
+			  </li>
+			  <li>
+				  <weight>0.10</weight>
+				  <only>(255,255,255)</only>
+			  </li>
+			  <li>
+				  <weight>0.15</weight>
+				  <only>(255,255,255)</only>
+			  </li>
+		  </options>
+	  </colorGenerator>
+	  
+	  
+  </ThingDef>
+	
+	
+  <ThingDef ParentName="ApparelMakeableBase">
+    
+    <defName>CuriosityBot_CoconutBra</defName>
+    <label>CoconutBra</label>
+    <description>This bra exudes a tropical vibe. It's firm yet breathable. Its introduction to men was met with fierce opposition from within the tribe, leading to its failure.</description>
+	  <techLevel>Neolithic</techLevel>
+	  
+    <graphicData>
+      <texPath>Things/Apparel/CoconutBra_Icon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(255, 255, 255)</color>
+    </graphicData>
+
+   <stuffCategories>
+    <li>Woody</li>
+   </stuffCategories>
+   <costStuffCount>60</costStuffCount>
+
+   <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>50</MarketValue>
+      <Mass>0.2</Mass>
+      <EquipDelay>1.0</EquipDelay>
+      <WorkToMake>3000</WorkToMake>
+     
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.15</ArmorRating_Heat>
+      <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+      <Insulation_Heat>3.0</Insulation_Heat>
+    </statBases>
+
+    
+	  <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		<recipeUsers>
+			<li>CuriosityBot_Spot</li>
+			<li>CraftingSpot</li>
+			<li>FueledSmithy</li>
+		</recipeUsers>
+    </recipeMaker>
+
+	  
+    <apparel>
+
+		<tags>
+			<li>Neolithic</li>
+			<li>Cleo_Apparel</li>
+		</tags>
+		
+      <bodyPartGroups> <li>Torso</li> <li>Shoulders</li> </bodyPartGroups>
+      <layers>  <li>Middle</li> </layers>
+      <gender>Female</gender>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <wornGraphicPath>Things/Apparel/CoconutBra/CoconutBra</wornGraphicPath> 
+
+    </apparel>
+
+	  
+	  <thingCategories>
+		  <li>Apparel</li>
+	  </thingCategories>
+	  
+	  <colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			  <li>
+				  <weight>0.10</weight>
+				  <only>(255,255,255)</only>
+			  </li>
+			  <li>
+				  <weight>0.15</weight>
+				  <only>(255,255,255)</only>
+			  </li>
+			  <li>
+				  <weight>0.20</weight>
+				  <only>(255,255,255)</only>
+			  </li>
+		  </options>
+	  </colorGenerator>
+	  
+  </ThingDef>
+	
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+
+		<defName>CuriosityBot_CrownA</defName>
+		<label>Gold plated crown</label>
+		<description>This headdress, reimagined from ancient culture, is extremely rare and unattainable for ordinary warriors. However, after numerous requests, gold-plated jewelry was finally permitted.</description>
+		<techLevel>Neolithic</techLevel>
+		
+		<graphicData>
+			<texPath>Things/Apparel/CrownA_Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
+		<costStuffCount>50</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>200</MarketValue>
+			<Mass>0.2</Mass>
+			<EquipDelay>1.0</EquipDelay>
+			<WorkToMake>3000</WorkToMake>
+
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Heat>3.0</Insulation_Heat>
+		</statBases>
+
+		<costList>
+			<Gold>10</Gold>
+		</costList>
+		
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<recipeUsers>
+				<li>CuriosityBot_Spot</li>
+				<li>CraftingSpot</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			
+			<useIngredientsForColor>false</useIngredientsForColor>
+		
+		</recipeMaker>
+		
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+		</equippedStatOffsets>
+
+		
+		<apparel>
+
+			<tags>
+				<li>Neolithic</li>
+				<li>Cleo_Apparel</li>
+			</tags>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<wornGraphicPath>Things/Apparel/CrownA/CrownA</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+
+	</ThingDef>
+
+</Defs>

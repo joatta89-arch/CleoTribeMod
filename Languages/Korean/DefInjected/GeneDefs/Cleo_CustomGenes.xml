@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Cleo_Skin_Bronze.label>구릿빛 피부</Cleo_Skin_Bronze.label>
+	<Cleo_Skin_Bronze.description>클레오 부족 특유의 구릿빛 피부입니다. 햇빛 아래에서 건강하게 빛납니다.</Cleo_Skin_Bronze.description>
+	<Cleo_Skin_Tanned.label>태닝된 피부</Cleo_Skin_Tanned.label>
+	<Cleo_Skin_Tanned.description>햇빛에 그을린 건강한 피부입니다. 매력적으로 보입니다.</Cleo_Skin_Tanned.description>
+	<Cleo_Charismatic.label>매력적인 혈통</Cleo_Charismatic.label>
+	<Cleo_Charismatic.description>타고난 매력으로 사람들을 끌어당깁니다. 하지만 질투를 불러일으키기도 합니다.</Cleo_Charismatic.description>
+	<Cleo_AncientWarrior.label>고대 전사의 혈통</Cleo_AncientWarrior.label>
+	<Cleo_AncientWarrior.description>수천 년간 이어져 온 전사의 피가 흐릅니다. 전투 능력이 뛰어납니다.</Cleo_AncientWarrior.description>
+	<Cleo_Tropical.label>열대 적응</Cleo_Tropical.label>
+	<Cleo_Tropical.description>열대기후 적응 유전자입니다. 열대기후 특유의 질병에 적응했으며 다른 질병에도 강합니다. 뜨거운 날씨 적응은 물론이고,잦은 입욕에도 감기에 걸리지 않게끔 추위에도 어느정도 내성이 있습니다.</Cleo_Tropical.description>
+	<Cleo_Burning.label>단명</Cleo_Burning.label>
+	<Cleo_Burning.description>이 유전자의 소유자는 폭발적으로 성장하고 부상에서도 빨리 회복하지만, 젊은 시기에 모든걸 불태우는 만큼 수명이 짧습니다.</Cleo_Burning.description>
+	<Cleo_FemaleOnlyBirth.label>모계 혈통</Cleo_FemaleOnlyBirth.label>
+	<Cleo_FemaleOnlyBirth.description>이 유전자를 가진 자의 자손은 항상 여성으로 태어납니다.\n\n고대 아마존 전사 부족의 혈통으로, 여신의 축복을 받아 오직 딸들만을 낳는다고 전해집니다. 남성 구성원은 외부에서 영입해야 하며, 이는 부족의 전통이자 새로운 피를 받아들이는 방법입니다.</Cleo_FemaleOnlyBirth.description>
+</LanguageData>

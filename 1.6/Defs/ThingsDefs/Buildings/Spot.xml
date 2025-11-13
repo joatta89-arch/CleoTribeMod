@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>CuriosityBot_Spot</defName>
+		<label>선조의 화덕</label>
+		<description>불씨가 꺼진 모닥불 주변에 원시적인 도구와 재료들이 놓여 있습니다. 부족의 장인들은 이곳에서 선조들의 방식 그대로 무기와 도구를 제작합니다.
+		"불은 꺼져도 기술은 이어진다" - 부족 장인의 격언</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/Spot/Spot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<surfaceType>Item</surfaceType>
+		
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<WorkTableWorkSpeedFactor>0.7</WorkTableWorkSpeedFactor>
+		</statBases>
+		
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>false</useHitPoints>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<uiOrder>2001</uiOrder>
+		<uiIconScale>0.85</uiIconScale>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			
+		</building>
+		
+		<comps>
+			<!-- 도구함 연동 가능 -->
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_ReportWorkSpeed">
+				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+			</li>
+		</comps>
+		<designationHotKey>Misc2</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		
+		<!-- 건설 비용 -->
+		<costList>
+			<WoodLog>100</WoodLog>
+		</costList>
+		
+		<!-- 건설 필요 스킬 -->
+		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+		<!-- 원시 기술 레벨 -->
+		<researchPrerequisites>
+			<!-- 리서치 없이 바로 사용 가능 -->
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

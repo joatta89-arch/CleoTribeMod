@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase" Name="CuriosityBot_PlantBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>1</Beauty>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>10</pathCost>
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+		</plant>
+	</ThingDef>
+
+	<!-- 코코넛 아이템 (수확물) -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>CuriosityBot_RawCoconut</defName>
+		<label>코코넛</label>
+		<description>단단한 껍질 안에 달콤한 과육과 시원한 코코넛 워터가 들어있습니다. 그대로 먹거나 요리 재료로 사용할 수 있습니다. "떨어지는 코코넛을 조심하라" - 부족의 경고</description>
+		
+		<!-- 이게 핵심! ThingDef 레벨에 있어야 함 -->
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tickerType>Rare</tickerType>
+		
+		<!-- 그래픽 -->
+		<graphicData>
+			<texPath>Things/Item/PlantFoodRaw/Coconut</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<!-- 스탯 -->
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Nutrition>0.1</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.01</FoodPoisonChanceFixedHuman>
+		</statBases>
+		
+		<!-- 카테고리 -->
+		<thingCategories>
+			<li>PlantFoodRaw</li>
+		</thingCategories>
+		
+		<!-- 섭취 설정 -->
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawBad</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+		</ingestible>
+		
+		<!-- 부패 -->
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- 코코넛 나무 (재배 가능) -->
+	<ThingDef ParentName="CuriosityBot_PlantBase">
+		<defName>CuriosityBot_CoconutTree</defName>
+		<label>코코넛 나무</label>
+		<description>열대 지방의 대표적인 과일 나무입니다. 성장하면 코코넛을 수확할 수 있으며, 수확 후에도 나무는 남아 다시 열매를 맺습니다. 부족민들은 이 나무를 '생명의 나무'라 부르며 소중히 가꿉니다.</description>
+		
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<Nutrition>2.5</Nutrition>
+		</statBases>
+		
+		<graphicData>
+			<texPath>Things/Plant/CoconutTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.8, 0.55)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<fillPercent>0.25</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		<blockWind>true</blockWind>
+		<neverMultiSelect>false</neverMultiSelect>
+		
+		<plant>
+			<!-- 성장 설정 -->
+			<growDays>15</growDays>
+			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
+			
+			<!-- 수확 설정 -->
+			<harvestedThingDef>CuriosityBot_RawCoconut</harvestedThingDef>
+			<harvestYield>15</harvestYield>
+			<harvestMinGrowth>0.65</harvestMinGrowth>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			
+			<!-- 작업 시간 -->
+			<sowWork>1500</sowWork>
+			<harvestWork>800</harvestWork>
+			
+			<!-- 재배 조건 -->
+			<sowMinSkill>6</sowMinSkill>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<fertilityMin>0.5</fertilityMin>
+			
+			<!-- 환경 요구사항 -->
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestFailable>false</harvestFailable>
+			
+			<!-- 재배 태그 -->
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			
+			<!-- 나무 설정 -->
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<visualSizeRange>0.9~1.5</visualSizeRange>
+			<topWindExposure>0.25</topWindExposure>
+			<interferesWithRoof>true</interferesWithRoof>
+			
+			<!-- 사운드 -->
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			
+			<!-- 미성숙 그래픽 -->
+			<immatureGraphicPath>Things/Plant/CoconutTreeImmature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+
+</Defs>

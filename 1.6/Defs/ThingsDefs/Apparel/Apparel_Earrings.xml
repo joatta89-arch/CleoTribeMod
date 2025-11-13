@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<ThingDef ParentName="ApparelMakeableBase">
+	  <defName>CuriosityBot_EarringA</defName>
+	  <label>부족귀걸이</label>
+	  <description>부족에서 비밀스럽게 전승되어오는 기술로 제작된 귀걸이입니다. 특별한 기술덕에 귀걸이 임에도 눈을 보호하는 효과가 있습니다.특수 가공한 금속 위에 예술적인 목재로 마감합니다.</description>
+		
+	  <graphicData>
+		  <texPath>Things/Apparel/EarringsA_Icon</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <color>(255, 255, 255)</color>
+	  </graphicData>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		
+	<statBases>
+      
+		<MaxHitPoints>200</MaxHitPoints>
+        <WorkToMake>3000</WorkToMake>
+        <Mass>0.01</Mass>
+        <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+        <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+        <ArmorRating_Heat>0.1</ArmorRating_Heat>
+        <Insulation_Cold>0</Insulation_Cold>
+        <Insulation_Heat>0</Insulation_Heat>
+        <EquipDelay>0.4</EquipDelay>
+    </statBases>
+
+		
+    <apparel>
+      <developmentalStageFilter>Adult,Child</developmentalStageFilter>
+
+      <drawData>
+    
+		<defaultData>
+          <layer>66</layer>
+        </defaultData>
+        <dataNorth>
+          <layer>63</layer>
+        </dataNorth>
+		  
+      </drawData>
+
+		<bodyPartGroups>
+			<li>Eyes</li>
+		</bodyPartGroups>
+		<layers>
+			<li>EyeCover</li>
+		</layers>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<wornGraphicPath>Things/Apparel/EarringsA/EarringsA</wornGraphicPath>
+		<useWornGraphicMask>false</useWornGraphicMask>
+		<tags>
+			<li>Cleo_Apparel</li>
+		</tags>
+		
+    </apparel>
+		
+		
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<recipeUsers>
+				<li>CuriosityBot_Spot</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+	  
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+		
+  </ThingDef>
+	
+</Defs>

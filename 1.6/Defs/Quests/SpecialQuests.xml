@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 북북 노인 소환 퀘스트 -->
+	<QuestScriptDef>
+		<defName>CuriosityBot_Quest_SummonBokbok</defName>
+		<rootSelectionWeight>0</rootSelectionWeight>
+		<rootMinPoints>0</rootMinPoints>
+		<canGiveRoyalFavor>false</canGiveRoyalFavor>
+		<expireDaysRange>9999~9999</expireDaysRange>
+
+		<!-- 퀘스트 이름 규칙 -->
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->전설의 무술가 소환</li>
+			</rulesStrings>
+		</questNameRules>
+
+		<!-- 퀘스트 설명 규칙 -->
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->부족의 고대 의식을 통해 전설의 무술가 '북북 노인'을 소환합니다.\n\n그는 오랜 세월 동안 무술을 연마해온 달인으로, 당신의 정착지에 큰 힘이 될 것입니다.</li>
+			</rulesStrings>
+		</questDescriptionRules>
+
+		<root Class="QuestNode_Sequence">
+			<nodes>
+
+				<!-- 북북 노인 생성 (수락 시까지 지연됨) -->
+				<li Class="CleoShieldSystem.QuestNode_GenerateSpecialPawn">
+					<specialPawnType>bokbok</specialPawnType>
+					<storeAs>bokbokPawn</storeAs>
+				</li>
+
+				<!-- 퀘스트 종료 -->
+				<li Class="QuestNode_End">
+					<outcome>Success</outcome>
+				</li>
+
+			</nodes>
+		</root>
+	</QuestScriptDef>
+
+	<!-- 엔티아르 골드썬 영입 퀘스트 -->
+	<QuestScriptDef>
+		<defName>CuriosityBot_Quest_RecruitNTR</defName>
+		<rootSelectionWeight>0</rootSelectionWeight>
+		<rootMinPoints>0</rootMinPoints>
+		<canGiveRoyalFavor>false</canGiveRoyalFavor>
+		<expireDaysRange>9999~9999</expireDaysRange>
+
+		<!-- 퀘스트 이름 규칙 -->
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->찬란한 전사의 귀환</li>
+			</rulesStrings>
+		</questNameRules>
+
+		<!-- 퀘스트 설명 규칙 -->
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->전설적인 카리스마를 지닌 전사 '엔티아르 골드썬'이 당신의 부족에 합류하기 위해 찾아옵니다.\n\n그의 찬란한 금발과 매력은 모든 이들의 시선을 사로잡습니다... 특히 여성들의.\n\n(주의: 정착지 내 인간관계에 변화가 생길 수 있습니다)</li>
+			</rulesStrings>
+		</questDescriptionRules>
+
+		<root Class="QuestNode_Sequence">
+			<nodes>
+
+				<!-- 엔티아르 생성 (수락 시까지 지연됨) -->
+				<li Class="CleoShieldSystem.QuestNode_GenerateSpecialPawn">
+					<specialPawnType>ntr</specialPawnType>
+					<storeAs>ntrPawn</storeAs>
+				</li>
+
+				<!-- 퀘스트 종료 -->
+				<li Class="QuestNode_End">
+					<outcome>Success</outcome>
+				</li>
+
+			</nodes>
+		</root>
+	</QuestScriptDef>
+
+</Defs>

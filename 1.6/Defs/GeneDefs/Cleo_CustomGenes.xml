@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+  <!-- 구릿빛 피부 유전자 (공용)-->
+	<GeneDef>
+    <defName>Cleo_Skin_Bronze</defName>
+    <label>구릿빛 피부</label>
+    <description>클레오 부족 특유의 구릿빛 피부입니다. 햇빛 아래에서 건강하게 빛납니다.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride1</iconPath>
+    <displayCategory>Cosmetic</displayCategory>
+	  <marketValueFactor>1.5</marketValueFactor>
+    <displayOrderInCategory>1100</displayOrderInCategory>
+		<exclusionTags>
+			<li>SkinColorOverride</li>
+		</exclusionTags>
+    
+    <!-- 피부색 강제 -->
+	<skinColorOverride>(228, 158, 90)</skinColorOverride>  <!-- 구릿빛 -->
+    
+    <!-- 대사 제거 -->
+    <biostatMet>3</biostatMet>
+    <biostatCpx>0</biostatCpx>
+    
+    <!-- 유전 설정 -->
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>  <!-- 랜덤 생성 안 됨 -->
+    <selectionWeight>0</selectionWeight>
+    
+  </GeneDef>
+
+  <!-- 태닝된 피부 유전자 (엔티아르용) -->
+
+	<GeneDef>
+    <defName>Cleo_Skin_Tanned</defName>
+    <label>태닝된 피부</label>
+    <description>햇빛에 그을린 건강한 피부입니다. 매력적으로 보입니다.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride2</iconPath>
+
+    <displayOrderInCategory>1101</displayOrderInCategory>
+
+	  <skinColorOverride>(242, 199, 140)</skinColorOverride>  <!-- 태닝 -->
+    
+    <biostatMet>3</biostatMet>
+    <biostatCpx>0</biostatCpx>
+    
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>0</selectionWeight>
+	
+	</GeneDef>
+	
+	<!-- 매력적인 혈통 (엔티아르용 - 사교 보너스) -->
+	<GeneDef>
+		<defName>Cleo_Charismatic</defName>
+		<label>매력적인 혈통</label>
+		<description>타고난 매력으로 사람들을 끌어당깁니다. 하지만 질투를 불러일으키기도 합니다.</description>
+		<iconPath>UI/Icons/Genes/Gene_Beauty</iconPath>
+
+		<displayOrderInCategory>1201</displayOrderInCategory>
+
+		<!-- 사교 보너스 -->
+		<statOffsets>
+			<SocialImpact>0.25</SocialImpact>
+			<!-- 사교 영향력 +25% -->
+			<NegotiationAbility>0.15</NegotiationAbility>
+			<!-- 협상 +15% -->
+		</statOffsets>
+
+
+		<biostatMet>2</biostatMet>
+		<biostatCpx>1</biostatCpx>
+
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+		<selectionWeight>0</selectionWeight>
+
+	</GeneDef>
+
+  <!-- 고대 전사의 혈통 -->
+	<GeneDef>
+    <defName>Cleo_AncientWarrior</defName>
+    <label>고대 전사의 혈통</label>
+    <description>수천 년간 이어져 온 전사의 피가 흐릅니다. 전투 능력이 뛰어납니다.</description>
+    <iconPath>UI/Icons/Genes/Gene_MeleeDamage</iconPath>
+
+    <displayOrderInCategory>1200</displayOrderInCategory>
+		
+	<forcedTraits>
+		<li>
+			<def>Tough</def>
+		</li>
+	</forcedTraits>
+		
+    <statOffsets>
+      <MeleeDodgeChance>0.15</MeleeDodgeChance>  <!-- 회피 +15% -->
+      <MeleeHitChance>0.10</MeleeHitChance>  <!-- 명중 +10% -->
+    </statOffsets>
+    
+    <statFactors>
+		<MeleeDamageFactor>1.3</MeleeDamageFactor>  <!-- 데미지 +30% -->
+		<Fertility>3</Fertility><!-- 생식 +300% -->
+    </statFactors>
+		<painOffset>-0.1</painOffset> <!-- 고통 저항 +10% -->
+    
+		<biostatMet>-3</biostatMet>  <!-- 대사 비용 -->
+		<biostatCpx>4</biostatCpx>  <!-- 복잡도 -->
+		
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+		<selectionWeight>0</selectionWeight>
+		
+  </GeneDef>
+
+
+
+	<!-- 열대적응 -->
+	<GeneDef>
+		<defName>Cleo_Tropical</defName>
+		<label>열대 적응</label>
+		<description>열대기후 적응 유전자입니다. 열대기후 특유의 질병에 적응했으며 다른 질병에도 강합니다. 뜨거운 날씨 적응은 물론이고,잦은 입욕에도 감기에 걸리지 않게끔 추위에도 어느정도 내성이 있습니다.</description>
+		<iconPath>UI/Icons/Genes/Gene_Tropical</iconPath>
+
+		<displayOrderInCategory>1201</displayOrderInCategory>
+
+		<statOffsets>
+			<ComfyTemperatureMax>15</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+		</statOffsets>
+		<makeImmuneTo>
+			<li>Flu</li>
+			<li>Malaria</li>
+			<li>SleepingSickness</li>
+			<li>GutWorms</li>
+			<li>MuscleParasites</li>
+		</makeImmuneTo>
+		<exclusionTags>
+			<li>Immunity</li>
+		</exclusionTags>
+		<biostatMet>-3</biostatMet>
+		<biostatCpx>4</biostatCpx>
+
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+		<selectionWeight>0</selectionWeight>
+
+	</GeneDef>
+	
+	<!-- 단명 -->
+	<GeneDef>
+		<defName>Cleo_Burning</defName>
+		<label>단명</label>
+		<description>이 유전자의 소유자는 폭발적으로 성장하고 부상에서도 빨리 회복하지만, 젊은 시기에 모든걸 불태우는 만큼 수명이 짧습니다.</description>
+		<iconPath>UI/Icons/Genes/Gene_Buring</iconPath>
+
+		<displayOrderInCategory>1201</displayOrderInCategory>
+		
+		<biologicalAgeTickFactorFromAgeCurve>
+			<points>
+				<li>(0, 6)</li>
+				<li>(13, 3)</li>
+				<li>(18.5, 1)</li>
+			</points>
+		</biologicalAgeTickFactorFromAgeCurve>
+		<dontMindRawFood>true</dontMindRawFood>
+		
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		
+		<statFactors>
+		<LifespanFactor>0.45</LifespanFactor>
+		<InjuryHealingFactor>2</InjuryHealingFactor>
+		<RawNutritionFactor>1.2</RawNutritionFactor>
+		</statFactors>
+		
+		<biostatMet>6</biostatMet>
+		<biostatCpx>2</biostatCpx>
+
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+		<selectionWeight>0</selectionWeight>
+
+	</GeneDef>
+	
+	<!-- 여성만 태어나는 유전자 - C# 패치와 연동 -->
+	<GeneDef>
+		<defName>Cleo_FemaleOnlyBirth</defName>
+		<label>모계 혈통</label>
+		<description>이 유전자를 가진 자의 자손은 항상 여성으로 태어납니다.\n\n고대 아마존 전사 부족의 혈통으로, 여신의 축복을 받아 오직 딸들만을 낳는다고 전해집니다. 남성 구성원은 외부에서 영입해야 하며, 이는 부족의 전통이자 새로운 피를 받아들이는 방법입니다.</description>
+
+		<!-- 아이콘 -->
+		<iconPath>UI/Icons/Genes/Gene_Female</iconPath>
+
+		<!-- 유전자 비용 -->
+		<biostatMet>0</biostatMet>
+		<biostatCpx>1</biostatCpx>
+
+		<!-- 카테고리 -->
+		<displayCategory>Reproduction</displayCategory>
+
+		<!-- 랜덤 생성 방지 -->
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+		<selectionWeight>0</selectionWeight>
+	</GeneDef>
+</Defs>

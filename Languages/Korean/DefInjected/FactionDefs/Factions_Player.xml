@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Cleo_PlayerTribe.label>새로운 클레오 부족</Cleo_PlayerTribe.label>
+	<Cleo_PlayerTribe.description>작은 부족 집단입니다</Cleo_PlayerTribe.description>
+	<Cleo_PlayerTribe.pawnSingular>부족원</Cleo_PlayerTribe.pawnSingular>
+	<Cleo_PlayerTribe.pawnsPlural>부족원들</Cleo_PlayerTribe.pawnsPlural>
+</LanguageData>

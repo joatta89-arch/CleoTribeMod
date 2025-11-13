@@ -1,0 +1,25 @@
+<ModMetaData>
+    <name>Cleo Tribe</name>
+    <author>CuriosityRobot</author>
+    <packageId>Cleo.Tribe</packageId>
+    <supportedVersions>
+		<li>1.6</li>
+    </supportedVersions>
+    <description>test</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>NL.FacialAnimation</li>
+	</loadAfter>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>Royalty</displayName>
+		</li>
+	</modDependencies>
+</ModMetaData>

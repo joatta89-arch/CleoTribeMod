@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 철학 작업대 (연구 건물) -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>CuriosityBot_PhilosophyDesk</defName>
+		<label>철학 작업대</label>
+		<description>부족의 지혜를 기록하고 연구하는 작은 작업대입니다. 기존 연구대보다 공간을 적게 차지하지만, 연구 속도는 다소 느립니다. 근처에 지혜의 토템을 배치하면 연구 속도가 증가합니다.</description>
+
+		<!-- 연구 건물 -->
+		<thingClass>Building_ResearchBench</thingClass>
+
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<category>Building</category>
+
+		<!-- 그래픽 -->
+		<graphicData>
+			<texPath>Things/Building/Production/Philosophy/Philosophy</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Production/Philosophy/Philosophy_MenuIcon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<surfaceType>Item</surfaceType>
+
+		<!-- 크기 및 이동 -->
+		<size>(2,1)</size>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<passability>PassThroughOnly</passability>
+		<pathCost>42</pathCost>
+		<selectable>true</selectable>
+
+		<!-- 스탯 -->
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<ResearchSpeedFactor>0.75</ResearchSpeedFactor>
+			<Beauty>3</Beauty>
+		</statBases>
+
+		<!-- 건설 비용 -->
+		<costList>
+			<WoodLog>150</WoodLog>
+		</costList>
+
+		<techLevel>Neolithic</techLevel>
+		<constructEffect>ConstructDirt</constructEffect>
+		<soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_Trash</filthLeaving>
+
+		<!-- 배치 작업자 -->
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+
+		<!-- 컴포넌트 -->
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Flickable"/>
+			<!-- 시설물 연동 - 근처 토템이 연구 속도 증가 -->
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>CuriosityBot_WisdomTotem</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+
+		<!-- 건설 메뉴 카테고리 -->
+		<designationCategory>Production</designationCategory>
+		<designationHotKey>Misc4</designationHotKey>
+
+		<!-- 상호작용 위치 -->
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+
+		<!-- 건물 설정 -->
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+
+	</ThingDef>
+
+	<!-- 지혜의 토템 (1x1 연구 속도 증가 시설물) -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>CuriosityBot_WisdomTotem</defName>
+		<label>지혜의 토템</label>
+		<description>부족의 지혜가 깃든 작은 토템입니다. 근처의 철학 작업대 연구 속도를 10% 증가시킵니다.</description>
+
+		<thingClass>Building</thingClass>
+
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<category>Building</category>
+
+		<!-- 그래픽 -->
+		<graphicData>
+			<texPath>Things/Building/Production/Philosophy/WisdomTotem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.4, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Production/Philosophy/WisdomTotem_MenuIcon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+
+		<!-- 크기 -->
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<fillPercent>0.15</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<passability>PassThroughOnly</passability>
+		<pathCost>14</pathCost>
+		<selectable>true</selectable>
+
+		<!-- 스탯 -->
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+
+		<!-- 건설 비용 -->
+		<costList>
+			<WoodLog>100</WoodLog>
+		</costList>
+
+		<techLevel>Neolithic</techLevel>
+		<constructEffect>ConstructDirt</constructEffect>
+		<soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+
+		<!-- 컴포넌트 - 시설물 기능 -->
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.10</ResearchSpeedFactor>
+					<!-- 연구 속도 +10% -->
+				</statOffsets>
+				<maxSimultaneous>2</maxSimultaneous>
+				<!-- 최대 2개까지 영향 -->
+				<maxDistance>6</maxDistance>
+				<!-- 6칸 이내 -->
+			</li>
+		</comps>
+
+		<!-- 건설 메뉴 -->
+		<designationCategory>Production</designationCategory>
+
+		<!-- 건물 설정 -->
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+
+	</ThingDef>
+
+</Defs>

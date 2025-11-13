@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef>
+		<defName>Cleo_QueenSuccession</defName>
+		<scenario>
+			<name>부족의 여왕</name>
+			<summary>부족의 여왕 계승</summary>
+			<description>부족구성원이 많아지고, 분쟁이 커지자 당신은 당신을 따르는 전사들과 약간의 자원을 들고 독립 이주하기로 결심했습니다. 부족의 전통을 이은 새로운 여왕이 될 지, 작은 캠프로 남을지 어떨지는 당신의 손에 달렸습니다.</description>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Cleo_PlayerTribe</factionDef>
+			</playerFaction>
+			<surfaceLayer>
+				<def>SurfaceLayerFixed</def>
+				<layer>Surface</layer>
+				<settingsDef>Surface</settingsDef>
+				<hide>True</hide>
+				<tag>Surface</tag>
+				<connections>
+					<li>
+						<tag>OrbitZoomOut</tag>
+					</li>
+				</connections>
+			</surfaceLayer>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>5</pawnChoiceCount>
+					<xenotypeCounts>
+						<li>
+							<count>5</count>
+							<requiredAtStart>True</requiredAtStart>
+							<xenotype>Cleo_Tribal</xenotype>
+							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+							<description>부족 전사</description>
+						</li>
+					</xenotypeCounts>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>새로운 시대를 열어라. 부족의 운명은 당신의 손에 달려있다.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Panther</animalKind>
+					<count>3</count>
+					<bondToRandomPlayerPawnChance>0.5</bondToRandomPlayerPawnChance>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pemmican</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Steel</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Gladius</thingDef>
+					<stuff>Jade</stuff>
+					<quality>Legendary</quality>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Ikwa</thingDef>
+					<stuff>Jade</stuff>
+					<count>2</count>
+					<quality>Excellent</quality>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Bow_Short</thingDef>
+					<count>2</count>
+					<quality>Good</quality>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CuriosityBot_KiteShield</thingDef>
+					<stuff>Leather_Plain</stuff>
+					<count>3</count>
+					<quality>Good</quality>
+				</li>
+				<li Class="ScenPart_CreateQuest">
+					<def>CreateQuest</def>
+					<questDef>CuriosityBot_Quest_SummonBokbok</questDef>
+				</li>
+				<li Class="ScenPart_CreateIncident">
+					<def>CreateIncident</def>
+					<incident>WildManWandersIn</incident>
+					<intervalDays>48.9322205</intervalDays>
+					<minDays>15</minDays>
+					<maxDays>45</maxDays>
+					<repeat>True</repeat>
+					<occurTick>2453077.75</occurTick>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>CuriosityBot_Basic</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Stonecutting</project>
+				</li>
+				<li Class="ScenPart_PawnFilter_Age">
+					<def>PawnFilter_Age</def>
+					<allowedAgeRange>18~21</allowedAgeRange>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

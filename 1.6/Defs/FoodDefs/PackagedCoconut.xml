@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef>
+		<defName>CuriosityBot_PackagedCoconut</defName>
+		<label>코코넛 주스</label>
+		<description>코코넛 중 특별히 큰 코코넛을 베이스로 하여 코코넛 내부에 과즙을 채운 거대 코코넛 주스입니다.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		
+		<graphicData>
+			<texPath>Things/Item/Meal/PackagedCoconut</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<stackLimit>30</stackLimit>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>14</pathCost>
+		
+		<statBases>
+		<MaxHitPoints>30</MaxHitPoints>
+		<MarketValue>50</MarketValue>
+		<Mass>0.2</Mass>
+		<DeteriorationRate>2</DeteriorationRate>
+		<Nutrition>0.5</Nutrition>
+		</statBases>
+		
+		<ingestible>
+			<foodType>Meal</foodType>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<joy>0.05</joy>
+			<joyKind>Gluttonous</joyKind>
+		</ingestible>
+		
+		<thingCategories>
+			<li>FoodMeals</li>
+		</thingCategories>
+		<tradeability>Buyable</tradeability>
+	</ThingDef>
+</Defs>

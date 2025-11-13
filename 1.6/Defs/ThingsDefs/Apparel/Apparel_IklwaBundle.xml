@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- 이클와 다발 투사체 (벨트 전용) -->
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>CuriosityBot_IklwaBundle_Thrown</defName>
+		<label>휴대용 이클와</label>
+
+		<!-- 그래픽 (기존 이클와 재사용 가능) -->
+		<graphicData>
+			<texPath>Things/Equipment/WeaponRanged/CuriosityBot_Iklwa_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<!-- 투사체 속성 -->
+		<projectile>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>25</speed>
+			<!-- 약간 더 빠르게 (균형잡힌 설계) -->
+		</projectile>
+	</ThingDef>
+	
+	<!-- 이클와 다발 - 벨트 슬롯 투척 무기 -->
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>CuriosityBot_IklwaBundle</defName>
+		<label>휴대용 이클와</label>
+		<description>허리에 차는 휴대용 이클와입니다. 2개의 투창용 창이 묶여 있으며, 전투 중 빠르게 꺼내 던질 수 있습니다.
+부족 전사들은 적진 돌파 전에 이클와를 던져 적의 전열을 흐트러뜨립니다.</description>
+		
+		<!-- 그래픽 -->
+		<graphicData>
+			<texPath>Things/Apparel/Belt/IklwaBundle/IklwaBundle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<!-- 원시 기술 레벨 -->
+		<techLevel>Neolithic</techLevel>
+		
+		<!-- 스탯 -->
+		<statBases>
+			<Mass>1.2</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<MarketValue>45</MarketValue>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		
+		<tickerType>Normal</tickerType>
+		
+		<!-- 카테고리 -->
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		
+		<!-- 의복 속성 (벨트 슬롯) -->
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<scoreOffset>2</scoreOffset>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<ignoredByNonViolent>true</ignoredByNonViolent>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<wornGraphicPath>Things/Apparel/Belt/IklwaBundle/IklwaBundle</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<scale>(0.6,0.8)</scale>
+				</north>
+				<south>
+					<offset>(0,0.3)</offset>
+					<scale>(0.6,0.8)</scale>
+				</south>
+				<east>
+					<offset>(-0.3,0)</offset>
+					<scale>(0.7,0.8)</scale>
+				</east>
+				<west>
+					<offset>(0.3,0)</offset>
+					<scale>(0.7,0.8)</scale>
+				</west>
+			</wornGraphicData>
+			<tags>
+				<li>Cleo_Apparel</li>
+			</tags>
+		</apparel>
+		
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<tradeNeverStack>true</tradeNeverStack>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		
+		<!-- 투척 공격 -->
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<label>이클와 투척</label>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>true</targetable>
+				<onlyManualCast>True</onlyManualCast>
+				<range>24</range>
+				<warmupTime>1.5</warmupTime>
+				<defaultProjectile>CuriosityBot_IklwaBundle_Thrown</defaultProjectile>
+				<soundCast>CuriosityBot_IklwaThrown</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		
+		<!-- 컴포넌트 -->
+		<comps>
+			<!-- 2발 장전, 다 쓰면 파괴 -->
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>2</maxCharges>
+				<destroyOnEmpty>true</destroyOnEmpty>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>투창</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		
+		<!-- 제작 레시피 -->
+		<recipeMaker>
+			<recipeUsers>
+				<li>CuriosityBot_Spot</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		
+		<!-- 재료 -->
+		<costList>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<CuriosityBot_IklwaBundle_Thrown.label>휴대용 이클와</CuriosityBot_IklwaBundle_Thrown.label>
+	<CuriosityBot_IklwaBundle.label>휴대용 이클와</CuriosityBot_IklwaBundle.label>
+	<CuriosityBot_IklwaBundle.description>허리에 차는 휴대용 이클와입니다. 2개의 투창용 창이 묶여 있으며, 전투 중 빠르게 꺼내 던질 수 있습니다.
+부족 전사들은 적진 돌파 전에 이클와를 던져 적의 전열을 흐트러뜨립니다.</CuriosityBot_IklwaBundle.description>
+	<CuriosityBot_IklwaBundle.verbs.li.label>이클와 투척</CuriosityBot_IklwaBundle.verbs.li.label>
+	<CuriosityBot_IklwaBundle.comps.li.chargeNoun>투창</CuriosityBot_IklwaBundle.comps.li.chargeNoun>
+</LanguageData>

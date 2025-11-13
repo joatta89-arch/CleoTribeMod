@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- 일반 클레오 부족민 -->
+	<XenotypeDef>
+		<defName>Cleo_Tribal</defName>
+		<label>클레오</label>
+		<description>열대 섬에서 대대로 살아온 전사 부족. 강인한 육체와 전투 본능을 타고났다.</description>
+		<descriptionShort>전투에 특화된 열대 부족 전사</descriptionShort>
+
+		<iconPath>UI/Icons/Xenotypes/CleoTribal</iconPath>
+		<inheritable>true</inheritable>
+		<chanceToUseNameMaker>1.0</chanceToUseNameMaker>
+		<genes>
+				<li>Cleo_Skin_Bronze</li>
+				<li>ToxicEnvironmentResistance_Partial</li>
+				<li>Aggression_Aggressive</li>
+				<li>Robust</li>
+				<li>BGI_DominantGenes</li>
+			    <li>Beauty_Pretty</li>
+				<li>Body_Standard</li>
+				<li>Body_Thin</li>
+				<li>Hair_InkBlack</li>
+				<li>StrongStomach</li>
+			    <li>Cleo_FemaleOnlyBirth</li>
+				<li>Cleo_AncientWarrior</li>
+				<li>Cleo_Burning</li>
+				<li>Cleo_Tropical</li>
+				<li>AptitudeStrong_Shooting</li>
+				<li>AptitudeStrong_Melee</li>
+				<li>AptitudePoor_Social</li>
+			    <li>AptitudeStrong_Artistic</li>
+				<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+	<!-- 레오파드 부족민 -->
+	<XenotypeDef>
+		<defName>Cleo_Leopard</defName>
+		<label>레오파드</label>
+		<description>열대 섬에서 대대로 살아온 전사 부족. 강인한 육체와 전투 본능을 타고났다.</description>
+		<descriptionShort>전투에 특화된 열대 부족 전사</descriptionShort>
+
+		<iconPath>UI/Icons/Xenotypes/CleoTribal2</iconPath>
+		<inheritable>true</inheritable>
+		<chanceToUseNameMaker>1.0</chanceToUseNameMaker>
+		<genes>
+			<li>Cleo_Skin_Bronze</li>
+			<li>ToxicEnvironmentResistance_Partial</li>
+			<li>Aggression_Aggressive</li>
+			<li>Robust</li>
+			<li>BGI_DominantGenes</li>
+			<li>Beauty_Pretty</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>Hair_InkBlack</li>
+			<li>StrongStomach</li>
+			<li>Cleo_FemaleOnlyBirth</li>
+			<li>Cleo_AncientWarrior</li>
+			<li>Cleo_Burning</li>
+			<li>Cleo_Tropical</li>
+			<li>AptitudeStrong_Shooting</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudePoor_Social</li>
+			<li>AptitudeStrong_Artistic</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+	<!-- 부족의 여왕 (시나리오 전용) -->
+	<XenotypeDef>
+		<defName>Cleo_TribalQueen</defName>
+		<label>여왕</label>
+		<description>신성한 혈통을 이어받은 부족의 통치자. 뛰어난 카리스마와 전투력을 겸비했다.</description>
+		<descriptionShort>신성한 혈통의 여왕</descriptionShort>
+
+		<iconPath>UI/Icons/Xenotypes/CleoQueen</iconPath>
+		<!-- 핵심: 자연 발생 차단 -->
+		<inheritable>true</inheritable>
+		<!-- 자식에게 유전 안됨 -->
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+		<!-- 무작위 폰 생성 안됨 -->
+		<chanceToUseNameMaker>1.0</chanceToUseNameMaker>
+
+		<genes>
+			<li>ToxicEnvironmentResistance_Partial</li>
+			<li>Aggression_Aggressive</li>
+			<li>Sleepy</li>
+			<li>Robust</li>
+			<li>Cleo_FemaleOnlyBirth</li>
+			<li>Libido_High</li>
+			<li>BGI_DominantGenes</li>
+			<li>Beauty_Beautiful</li>
+			<li>Body_Thin</li>
+			<li>Hair_InkBlack</li>
+			<li>CaveDweller</li>
+			<li>Cleo_Skin_Bronze</li>
+			<li>Cleo_AncientWarrior</li>
+			<li>Cleo_Burning</li>
+			<li>Cleo_Tropical</li>
+			<li>AptitudeStrong_Shooting</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudeTerrible_Mining</li>
+			<li>AptitudePoor_Cooking</li>
+			<li>AptitudeStrong_Artistic</li>
+			<li>AptitudeStrong_Social</li>
+		</genes>
+	</XenotypeDef>
+	
+</Defs>

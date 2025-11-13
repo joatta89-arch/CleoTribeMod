@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ApparelBase">
+			<defName>CuriosityBot_KiteShield</defName>
+			<label>옻칠한 카이트 실드</label>
+			<description>가볍고 질긴 나무 뼈대에 가죽을 씌운 방패입니다. 원거리 공격을 일정확률로 차단할 수 있습니다. 차단확률은 근접 스킬레벨에 따라 증가하며, 차단 성공시 내구도가 감소합니다.</description>
+
+			<thingClass>CleoShieldSystem.Shield_Cleo</thingClass>
+
+			<graphicData>
+				<texPath>Things/Equipment/Shield/IconCuriosityBot_KiteShield</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>1.0</drawSize>
+			</graphicData>
+
+			<!-- 재료 선택 가능 (돌 또는 금속) -->
+			<stuffCategories>
+				<li>Leathery</li>
+			</stuffCategories>
+			<costStuffCount>10</costStuffCount>
+
+			<!-- 추가 비용 (나무 자루) -->
+			<costList>
+				<WoodLog>50</WoodLog>
+			</costList>
+
+			<statBases>
+				<WorkToMake>3000</WorkToMake>
+				<EquipDelay>1.0</EquipDelay>
+				<Mass>3.0</Mass>
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>300</MarketValue>
+				<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+				<Insulation_Cold>0.5</Insulation_Cold>
+				<Insulation_Heat>0.5</Insulation_Heat>
+				<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+				<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+				<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+				<Insulation_Heat>3.0</Insulation_Heat>
+
+			</statBases>
+	   
+	        <recipeMaker>
+		   <researchPrerequisite>ComplexClothing</researchPrerequisite>
+				<recipeUsers>
+					<li>CuriosityBot_Spot</li>
+					<li>CraftingSpot</li>
+					<li>FueledSmithy</li>
+					<!-- 커스텀 작업대 defName도 가능 -->
+				</recipeUsers>
+	        </recipeMaker>
+
+	   
+			<apparel>
+				
+				
+				<bodyPartGroups>
+					<li>LeftHand</li>
+				</bodyPartGroups>
+				<countsAsClothingForNudity>false</countsAsClothingForNudity>
+				<layers>
+					<li>VFEC_OuterShell</li>
+				</layers>
+				<tags>
+					<li>Cleo_Apparel</li>
+				</tags>
+
+				
+			</apparel>
+
+	   
+	   <thingCategories>
+		   <li>ApparelArmor</li>
+	   </thingCategories>
+
+	   <comps>
+			<li Class="CleoShieldSystem.CompProperties_Cleo_Shield">
+				<blocksRangedWeapons>true</blocksRangedWeapons>
+				<shieldTexPath>Things/Equipment/Shield/CuriosityBot_KiteShield</shieldTexPath>
+				<drawSize>(3.0, 3.0)</drawSize>
+
+				<!-- 블록 관련 설정 -->
+				<durabilityLossPerBlock>15</durabilityLossPerBlock>
+				<!-- 블록당 내구도 -15 -->
+				<blockSoundDef>Cleo_ShieldBlock</blockSoundDef>
+				<!-- 커스텀 사운드 -->
+			</li>
+		</comps>
+
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

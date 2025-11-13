@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>Cleo_PlayerTribe</defName>
+		<label>New Cleo Clan</label>
+		<description>A small group of Tribal Clan</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>member</pawnSingular>
+		<pawnsPlural>members</pawnsPlural>
+		<basicMemberKind>Cleo_Tribal_Member</basicMemberKind>
+		<techLevel>Neolithic</techLevel>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<factionIconPath>World/WorldObjects/Expanding/TribeClan</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerSettlementTribal</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures>
+			<li>Corunan</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+
+	</FactionDef>
+
+</Defs>

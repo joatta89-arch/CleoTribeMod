@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<FactionDef Name="TribeBase" Abstract="True">
+		<raidLootValueFromPointsCurve>
+			<points>
+				<li>(35,     15)</li>
+				<li>(100,   120)</li>
+				<li>(1000,  500)</li>
+				<li>(2000,  800)</li>
+				<li>(4000, 1000)</li>
+			</points>
+		</raidLootValueFromPointsCurve>
+		<messageDefendersAttacking>{0} from {1} are attacking your {2}.</messageDefendersAttacking>
+	</FactionDef>
+	
+	<!-- ============================================ -->
+	<!-- 레오파드 부족 - 클레오 부족의 경쟁자 -->
+	<!-- ============================================ -->
+	<FactionDef ParentName="TribeBase">
+		<defName>LeopardClan</defName>
+		
+		<label>Leopard Clan</label>
+		<description>this is leopard clan</description>
+		<colorSpectrum>
+			<li>(0.95, 0.15, 0.40)</li>
+		</colorSpectrum>
+		<!-- 단수/복수 명칭 -->
+		<pawnSingular>leopard tribesman</pawnSingular>
+		<pawnsPlural>leopard tribespeople</pawnsPlural>
+		
+		<!-- 팩션 카테고리 -->
+		<categoryTag>Leopard Clan</categoryTag>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		
+		<!-- 팩션 아이콘 -->
+		<factionIconPath>World/WorldObjects/Expanding/SavageTribe</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		
+		<!-- 이름 생성기 -->
+		<factionNameMaker>NamerPersonCleoTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		
+		<!-- 기술 레벨 -->
+		<techLevel>Neolithic</techLevel>
+		
+		<!-- 문화 (림월드의 부족민 문화는 코루난(Corunan)임-->
+		<allowedCultures>
+			<li>Corunan</li>
+		</allowedCultures>
+		
+		<!-- 배경 스토리 필터 -->
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		
+		<!-- 리더 -->
+		<leaderTitle>chief</leaderTitle>
+		<fixedLeaderKinds>
+			<li>Leopard_Tribal_Chief</li>
+		</fixedLeaderKinds>
+		
+		<!-- 팩션 색상 (금발 느낌의 황금빛) -->
+		<colorSpectrum>
+			<li>(0.95, 0.80, 0.20)</li>
+			<li>(1.00, 0.85, 0.30)</li>
+			<li>(0.90, 0.75, 0.15)</li>
+		</colorSpectrum>
+		
+		<!-- 적대 관계 설정 -->
+		<permanentEnemy>false</permanentEnemy>
+		
+		<!-- 레이드 빈도 -->
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+				<li>(3000, 1.8)</li>
+				<li>(50000, 1.0)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		
+		<!-- 교역 상단 종류 -->
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_WarMerchant</li>
+		</caravanTraderKinds>
+		
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		
+		<!-- 도착 온도 범위 -->
+		<allowedArrivalTemperatureRange>-10~50</allowedArrivalTemperatureRange>
+		<!-- 최대 폰 비용 커브 -->
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0, 35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		
+		<!-- 폰 그룹 구성 -->
+		<pawnGroupMakers>
+			<!-- 초반 전투 그룹 (약함) -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Leopard_Tribal_Warrior>10</Leopard_Tribal_Warrior>
+					<Leopard_Tribal_Hunter>8</Leopard_Tribal_Hunter>
+					<Leopard_Tribal_Villager>5</Leopard_Tribal_Villager>
+				</options>
+			</li>
+			
+			<!-- 중반 전투 그룹 (보통) -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Leopard_Tribal_Warrior>10</Leopard_Tribal_Warrior>
+					<Leopard_Tribal_Hunter>10</Leopard_Tribal_Hunter>
+					<Leopard_Tribal_EliteWarrior>5</Leopard_Tribal_EliteWarrior>
+				</options>
+			</li>
+			
+			<!-- 후반 전투 그룹 (강함) -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>40</commonality>
+				<options>
+					<Leopard_Tribal_Warrior>10</Leopard_Tribal_Warrior>
+					<Leopard_Tribal_EliteWarrior>10</Leopard_Tribal_EliteWarrior>
+					<Leopard_Tribal_Chief>2</Leopard_Tribal_Chief>
+				</options>
+			</li>
+			
+			<!-- 정착지 구성 -->
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Leopard_Tribal_Villager>20</Leopard_Tribal_Villager>
+					<Leopard_Tribal_Warrior>10</Leopard_Tribal_Warrior>
+					<Leopard_Tribal_Hunter>8</Leopard_Tribal_Hunter>
+					<Leopard_Tribal_EliteWarrior>5</Leopard_Tribal_EliteWarrior>
+					<Leopard_Tribal_Chief>2</Leopard_Tribal_Chief>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		
+		<!-- 기타 설정 -->
+		<canUseAvoidGrid>true</canUseAvoidGrid>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>100</configurationListOrderPriority>
+		
+	</FactionDef>
+
+</Defs>

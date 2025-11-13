@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 포장된 초콜릿 제작 레시피 -->
+  <RecipeDef>
+    <defName>Make_CuriosityBot_PackagedChocolate</defName>
+    <label>포장된 초콜릿 만들기</label>
+    <description>초콜릿을 먹기 좋게 포장합니다. 5개의 초콜릿이 필요합니다.</description>
+    
+    <!-- 제작 장소 -->
+    <jobString>초콜릿 포장 중</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    
+    <!-- 제작 시간 -->
+    <workAmount>300</workAmount>  <!-- 짧음 - 단순히 포장만 -->
+    
+    <!-- 필요 스킬 -->
+    <workSkill>Cooking</workSkill>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    
+    <!-- 재료 -->
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>  <!-- 바닐라 초콜릿 -->
+          </thingDefs>
+        </filter>
+        <count>5</count>  <!-- 5개 필요! -->
+      </li>
+    </ingredients>
+    
+    <!-- 결과물 -->
+    <products>
+		<CuriosityBot_PackagedChocolate>1</CuriosityBot_PackagedChocolate>  <!-- 1개 생성 -->
+    </products>
+    
+    <!-- 제작 장소 -->
+    <recipeUsers>
+		<li>CuriosityBot_Spot</li>
+      <li>CraftingSpot</li>
+      <li>ElectricStove</li>  <!-- 전기 조리대 -->
+      <li>FueledStove</li>  <!-- 연료 조리대 -->
+    </recipeUsers>
+    
+    <!-- 연구 필요 없음 -->
+    <researchPrerequisite />
+    
+    <!-- 기타 설정 -->
+    <skillRequirements>
+      <Cooking>2</Cooking>  <!-- 최소 요리 2 -->
+    </skillRequirements>
+    
+  </RecipeDef>
+
+ <!-- 포장된 코코넛 제작 레시피 -->
+  <RecipeDef>
+    <defName>Make_CuriosityBot_PackagedCoconut</defName>
+    <label>코코넛주스 만들기</label>
+    <description>코코넛을 선별하고 그 중 특별히 거대한 코코넛을 베이스로 코코넛 음료를 요리합니다.</description>
+	  
+    <!-- 제작 장소 -->
+    <jobString>코코넛 선별 중</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	  
+    <!-- 제작 시간 -->
+    <workAmount>900</workAmount>  <!-- 짧음 -->
+	  
+    <!-- 필요 스킬 -->
+    <workSkill>Cooking</workSkill>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <!-- 재료 -->
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CuriosityBot_RawCoconut</li>  
+          </thingDefs>
+        </filter>
+        <count>5</count>  <!-- 5개 필요! -->
+      </li>
+    </ingredients>
+	  
+    <!-- 결과물 -->
+    <products>
+		<CuriosityBot_PackagedCoconut>1</CuriosityBot_PackagedCoconut>  <!-- 1개 생성 -->
+	</products>
+	  
+    <!-- 제작 장소 -->
+    <recipeUsers>
+		<li>CuriosityBot_Spot</li>
+      <li>CraftingSpot</li>
+      <li>ElectricStove</li>  <!-- 전기 조리대 -->
+      <li>FueledStove</li>  <!-- 연료 조리대 -->
+    </recipeUsers>
+    
+    <!-- 연구 필요 없음 -->
+    <researchPrerequisite />
+    
+    <!-- 기타 설정 -->
+    <skillRequirements>
+      <Cooking>2</Cooking>  <!-- 최소 요리 2 -->
+    </skillRequirements>
+    
+  </RecipeDef>
+	
+</Defs>

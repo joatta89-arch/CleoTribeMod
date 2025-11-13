@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>CuriosityBot_CleoTech</defName>
+		<label>고대부족연구</label>
+		<generalTitle>고대부족연구 프로젝트</generalTitle>
+    	<generalDescription>아마존+이집트+그리스 문화가 섞인 부족의 철학과 기술을 연구합니다.</generalDescription>
+ 
+	</ResearchTabDef>
+
+</Defs>

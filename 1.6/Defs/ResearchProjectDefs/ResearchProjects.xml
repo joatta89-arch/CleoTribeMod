@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>CuriosityBot_Basic</defName>
+        <label>기본 연구</label>
+        <description>기본 연구입니다.</description>
+        <baseCost>500</baseCost>
+		<tab>CuriosityBot_CleoTech</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.5</researchViewY>
+		<!--<prerequisites>
+			<li>선행요구연구</li>
+		</prerequisites>
+			-->
+	</ResearchProjectDef>
+
+</Defs>

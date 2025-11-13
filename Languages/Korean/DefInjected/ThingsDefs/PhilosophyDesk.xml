@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<CuriosityBot_PhilosophyDesk.label>철학 작업대</CuriosityBot_PhilosophyDesk.label>
+	<CuriosityBot_PhilosophyDesk.description>부족의 지혜를 기록하고 연구하는 작은 작업대입니다. 기존 연구대보다 공간을 적게 차지하지만, 연구 속도는 다소 느립니다. 근처에 지혜의 토템을 배치하면 연구 속도가 증가합니다.</CuriosityBot_PhilosophyDesk.description>
+	<CuriosityBot_WisdomTotem.label>지혜의 토템</CuriosityBot_WisdomTotem.label>
+	<CuriosityBot_WisdomTotem.description>부족의 지혜가 깃든 작은 토템입니다. 근처의 철학 작업대 연구 속도를 10% 증가시킵니다.</CuriosityBot_WisdomTotem.description>
+</LanguageData>

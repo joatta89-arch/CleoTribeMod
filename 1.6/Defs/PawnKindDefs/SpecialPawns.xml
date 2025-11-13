@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ============================================ -->
+	<!-- 북북 노인 - 격투 달인 -->
+	<!-- ============================================ -->
+	<PawnKindDef>
+		<defName>Cleo_BokbokElder</defName>
+		<label>Bokbok the Elder</label>
+		<race>Human</race>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<combatPower>150</combatPower>
+		
+		<!-- 필수: 초기 저항력 범위 -->
+		<initialResistanceRange>25~35</initialResistanceRange>
+		<initialWillRange>5~8</initialWillRange>
+		
+		<!-- 클레오 부족 이름 사용 (C#에서 강제 변경하지만 기본값) -->
+		<nameMaker>NamerPersonCleoTribal</nameMaker>
+		
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		
+		<!-- 기본 장비 -->
+		<apparelTags>
+			<li>Cleo_Apparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>CuriosityBot_TigerPanties</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>NeolithicMeleeAdvanced</li>
+		</weaponTags>
+		
+		<!-- 노인 스킬 -->
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>18~20</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<!-- ============================================ -->
+	<!-- 엔티아르 골드썬 - 카리스마 전사 -->
+	<!-- ============================================ -->
+	<PawnKindDef>
+		<defName>Cleo_NTRGoldsun</defName>
+		<label>Entiar Goldsun</label>
+		<race>Human</race>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<combatPower>100</combatPower>
+		
+		<!-- 필수: 초기 저항력 범위 -->
+		<initialResistanceRange>15~25</initialResistanceRange>
+		<initialWillRange>3~6</initialWillRange>
+		
+		<!-- 클레오 부족 이름 사용 (C#에서 강제 변경하지만 기본값) -->
+		<nameMaker>NamerPersonCleoTribal</nameMaker>
+		
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		
+		<apparelTags>
+			<li>Tribal</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>CuriosityBot_TigerPanties</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>NeolithicMeleeAdvanced</li>
+		</weaponTags>
+		
+		<!-- 전사 + 소셜 스킬 -->
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>10~14</range>
+			</li>
+			<li>
+				<skill>Social</skill>
+				<range>12~16</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+</Defs>

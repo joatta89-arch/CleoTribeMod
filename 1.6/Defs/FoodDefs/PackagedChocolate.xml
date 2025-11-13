@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 포장된 초콜릿 - 음식 아이템 -->
+	<ThingDef>
+		<defName>CuriosityBot_PackagedChocolate</defName>
+		<label>포장된 초콜릿</label>
+		<description>초콜릿을 먹기 좋게 포장한 간식입니다. 달콤하고 맛있으며 오래 보관할 수 있습니다. 약물이 아닌 일반 음식으로 취급되어 정착민들이 배고플 때 자유롭게 먹습니다.</description>
+
+		<!-- 카테고리 -->
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+
+		<!-- 그래픽 -->
+		<graphicData>
+			<texPath>Things/Item/Meal/PackagedChocolate</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+
+		<!-- 기본 속성 -->
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<stackLimit>30</stackLimit>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>14</pathCost>
+
+		<!-- 스탯 -->
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>55</MarketValue>
+			<Mass>0.2</Mass>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+
+		<!-- 음식 속성 -->
+		<ingestible>
+			<foodType>Meal</foodType>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<joy>0.05</joy>
+			<joyKind>Gluttonous</joyKind>
+		</ingestible>
+
+		<!-- 컴포넌트 -->
+		<comps>
+			<!-- 부패 없음 - 초콜릿이라 오래 보관 가능! -->
+			<li Class="CompProperties_Forbiddable" />
+		</comps>
+
+		<!-- 거래 -->
+		<thingCategories>
+			<li>FoodMeals</li>
+		</thingCategories>
+		<tradeability>Buyable</tradeability>
+
+	</ThingDef>
+
+</Defs>

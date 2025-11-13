@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<WeaponClassDef>
+		<defName>TribalRangedWeapon</defName>
+		<label>tribal ranged weapon</label>
+	</WeaponClassDef>
+	
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>CuriosityBot_Iklwa</defName>
+    <label>이클와</label>
+    <description>투척 무기이자 근접 무기로 모두 활용할 수 있도록 설계된 하이브리드 단창입니다.
+    이 설계는 원시 전쟁에서 무기를 교체할 틈 없이 즉각적으로 전투 방식을 전환해야 했던 고대 전사들의 전술에서 유래했습니다.
+    무거움을 감수시킨 사거리를 확보하는 데는 성공했지만, 대형 창날이 야기하는 불안정한 비행 궤도는 명중률을 심각하게 저해합니다.</description>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/CuriosityBot_Iklwa</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    
+    <!-- 재료 선택 가능 (돌 또는 금속) -->
+    <stuffCategories>
+      <li>Stony</li>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    
+    <!-- 추가 비용 (나무 자루) -->
+    <costList>
+      <WoodLog>70</WoodLog>
+    </costList>
+    
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+
+	  <weaponTags>
+		  <li>NeolithicRangedHeavy</li>
+		  <li>CleoTribalWeapon</li>
+		  <li>TribalShieldCompatible</li>  
+	  </weaponTags>
+
+	  <weaponClasses>
+		  <li>TribalRangedWeapon</li>
+	  </weaponClasses>
+
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>500</displayPriority>
+    </recipeMaker>
+    
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>CuriosityBot_Iklwa_Thrown</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>24</range>
+		<soundCast>CuriosityBot_IklwaThrown</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <armorPenetration>0.3</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>CuriosityBot_Iklwa_Thrown</defName>
+    <label>이클와</label>
+    <graphicData>
+      <texPath>Things/Equipment/WeaponRanged/CuriosityBot_Iklwa_Thrown</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>25</speed>
+    </projectile>
+  </ThingDef>
+	
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>CuriosityBot_Iklwa_Bokbok</defName>
+		<label>낡은 이클와</label>
+		<description>북북 노인이 평생 사용해온 이클와입니다.오랜 세월 함께한 탓인지, 노인만이 제대로 다룰 수 있습니다."호호호, 이 창은 나하고만 숨이 맞는단 말이야."</description>
+		
+		<graphicData>
+			<texPath>Things/Equipment/WeaponRanged/CuriosityBot_Iklwa</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<soundInteract>Interact_BeatFire</soundInteract>
+		
+		<!-- 재료 선택 가능 (돌 또는 금속) -->
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		
+		<!-- 추가 비용 (나무 자루) -->
+		<costList>
+			<WoodLog>70</WoodLog>
+		</costList>
+		
+		<statBases>
+			<MaxHitPoints>999</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.4</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+
+		<weaponTags>
+			<li>TribalShieldCompatible</li>
+		</weaponTags>
+
+		<weaponClasses>
+			<li>TribalRangedWeapon</li>
+		</weaponClasses>
+
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<displayPriority>500</displayPriority>
+		</recipeMaker>
+		
+		<!-- 생체코딩 -->
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+		
+		<!-- 노인 기합소리 -->
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CuriosityBot_Iklwa_Thrown</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>24</range>
+				<soundCast>CuriosityBot_BokbokKiai</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		
+		<!-- 근접도 동일 -->
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<armorPenetration>0.3</armorPenetration>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+</Defs>

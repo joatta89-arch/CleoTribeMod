@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- 클레오 부족 플레이어 멤버 -->
+	<Cleo_Tribal_Member.label>클레오 부족원</Cleo_Tribal_Member.label>
+	<Cleo_Tribal_Member.labelPlural>클레오 부족원들</Cleo_Tribal_Member.labelPlural>
+
+	<!-- 레오파드 부족 PawnKindDef 번역 -->
+	<Leopard_Tribal_Warrior.label>레오파드 부족 전사</Leopard_Tribal_Warrior.label>
+	<Leopard_Tribal_Warrior.labelPlural>레오파드 부족 전사들</Leopard_Tribal_Warrior.labelPlural>
+	
+	<Leopard_Tribal_Hunter.label>레오파드 부족 사냥꾼</Leopard_Tribal_Hunter.label>
+	<Leopard_Tribal_Hunter.labelPlural>레오파드 부족 사냥꾼들</Leopard_Tribal_Hunter.labelPlural>
+	
+	<Leopard_Tribal_EliteWarrior.label>레오파드 정예 전사</Leopard_Tribal_EliteWarrior.label>
+	<Leopard_Tribal_EliteWarrior.labelPlural>레오파드 정예 전사들</Leopard_Tribal_EliteWarrior.labelPlural>
+	
+	<Leopard_Tribal_Chief.label>레오파드 부족 추장</Leopard_Tribal_Chief.label>
+	<Leopard_Tribal_Chief.labelPlural>레오파드 부족 추장들</Leopard_Tribal_Chief.labelPlural>
+	
+	<Leopard_Tribal_Villager.label>레오파드 부족 주민</Leopard_Tribal_Villager.label>
+	<Leopard_Tribal_Villager.labelPlural>레오파드 부족 주민들</Leopard_Tribal_Villager.labelPlural>
+	
+	<Leopard_Tribal_Trader.label>레오파드 부족 상인</Leopard_Tribal_Trader.label>
+	<Leopard_Tribal_Trader.labelPlural>레오파드 부족 상인들</Leopard_Tribal_Trader.labelPlural>
+
+</LanguageData>

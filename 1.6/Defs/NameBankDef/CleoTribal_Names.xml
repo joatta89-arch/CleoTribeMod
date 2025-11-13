@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 클레오 부족 이름 생성 규칙 -->
+	<RulePackDef>
+		<defName>NamerPersonCleoTribal</defName>
+		<rulePack>
+			<rulesStrings>
+				
+				<!-- 기본 이름 구조 -->
+				<li>name->[TribalName] [TribalLastName]</li>
+				
+				<!-- ============================================ -->
+				<!-- 남성 이름 (First Names - Male) -->
+				<!-- ============================================ -->
+				<li>TribalName(p=0.5)->Conuto</li>
+				<li>TribalName(p=0.5)->Mangan</li>
+				<li>TribalName(p=0.5)->Bambos</li>
+				<li>TribalName(p=0.5)->Papayo</li>
+				<li>TribalName(p=0.5)->Banan</li>
+				<li>TribalName(p=0.5)->Palmar</li>
+				<li>TribalName(p=0.5)->Cactos</li>
+				<li>TribalName(p=0.5)->Agaven</li>
+				<li>TribalName(p=0.5)->Thundor</li>
+				<li>TribalName(p=0.5)->Stormo</li>
+				<li>TribalName(p=0.5)->Tidan</li>
+				<li>TribalName(p=0.5)->Wavon</li>
+				<li>TribalName(p=0.5)->Reefer</li>
+				<li>TribalName(p=0.5)->Corallo</li>
+				<li>TribalName(p=0.5)->Kelpin</li>
+				<li>TribalName(p=0.5)->Shello</li>
+				<li>TribalName(p=0.5)->Vulcano</li>
+				<li>TribalName(p=0.5)->Blazor</li>
+				<li>TribalName(p=0.5)->Tornax</li>
+				<li>TribalName(p=0.5)->Typhon</li>
+				<li>TribalName(p=0.5)->Glacior</li>
+				<li>TribalName(p=0.5)->Quarzo</li>
+				
+				<!-- ============================================ -->
+				<!-- 여성 이름 (First Names - Female) -->
+				<!-- ============================================ -->
+				<li>TribalName(p=0.5)->Hibisca</li>
+				<li>TribalName(p=0.5)->Orchida</li>
+				<li>TribalName(p=0.5)->Leafa</li>
+				<li>TribalName(p=0.5)->Petala</li>
+				<li>TribalName(p=0.5)->Bluma</li>
+				<li>TribalName(p=0.5)->Rosea</li>
+				<li>TribalName(p=0.5)->Lilliana</li>
+				<li>TribalName(p=0.5)->Jasmine</li>
+				<li>TribalName(p=0.5)->Guavana</li>
+				<li>TribalName(p=0.5)->Lychia</li>
+				<li>TribalName(p=0.5)->Pitaya</li>
+				<li>TribalName(p=0.5)->Mangosta</li>
+				<li>TribalName(p=0.5)->Passiona</li>
+				<li>TribalName(p=0.5)->Papina</li>
+				<li>TribalName(p=0.5)->Breeza</li>
+				<li>TribalName(p=0.5)->Sunnah</li>
+				<li>TribalName(p=0.5)->Rayna</li>
+				<li>TribalName(p=0.5)->Perlia</li>
+				<li>TribalName(p=0.5)->Corina</li>
+				<li>TribalName(p=0.5)->Misty</li>
+				<li>TribalName(p=0.5)->Luna</li>
+				<li>TribalName(p=0.5)->Stella</li>
+				<li>TribalName(p=0.5)->Aurora</li>
+				
+				<!-- ============================================ -->
+				<!-- 성씨 (Last Names) -->
+				<!-- ============================================ -->
+				<!-- 아프리카계 -->
+				<li>TribalLastName->Mbeki</li>
+				<li>TribalLastName->Kamau</li>
+				<li>TribalLastName->Nkosi</li>
+				<li>TribalLastName->Zuma</li>
+				<li>TribalLastName->Adebayo</li>
+				<li>TribalLastName->Okonkwo</li>
+				<li>TribalLastName->Mandela</li>
+				<li>TribalLastName->Ngozi</li>
+				
+				<!-- 그리스계 -->
+				<li>TribalLastName->Alexios</li>
+				<li>TribalLastName->Leonidas</li>
+				<li>TribalLastName->Kouris</li>
+				<li>TribalLastName->Stavros</li>
+				<li>TribalLastName->Papadakis</li>
+				<li>TribalLastName->Dimitriou</li>
+				
+				<!-- 이집트계 -->
+				<li>TribalLastName->Ramses</li>
+				<li>TribalLastName->Ptolemy</li>
+				<li>TribalLastName->Khafre</li>
+				<li>TribalLastName->Anubis</li>
+				<li>TribalLastName->Thutmose</li>
+				<li>TribalLastName->Neferu</li>
+				
+				<!-- 아마존/원주민 스타일 -->
+				<li>TribalLastName->Sunstone</li>
+				<li>TribalLastName->Goldleaf</li>
+				<li>TribalLastName->Tidecaller</li>
+				<li>TribalLastName->Stormborn</li>
+				<li>TribalLastName->Wavebringer</li>
+				<li>TribalLastName->Earthshaker</li>
+				<li>TribalLastName->Skydancer</li>
+				<li>TribalLastName->Firekeeper</li>
+				
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- 별명 생성 규칙 (선택사항) -->
+	<RulePackDef>
+		<defName>NamerPersonCleoTribalNick</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[TribalNick]</li>
+				
+				<li>TribalNick->Sunny</li>
+				<li>TribalNick->Storm</li>
+				<li>TribalNick->Reef</li>
+				<li>TribalNick->Shell</li>
+				<li>TribalNick->Coco</li>
+				<li>TribalNick->Wave</li>
+				<li>TribalNick->Breeze</li>
+				<li>TribalNick->Petal</li>
+				<li>TribalNick->Spark</li>
+				<li>TribalNick->Tide</li>
+				<li>TribalNick->Leaf</li>
+				<li>TribalNick->Stone</li>
+				<li>TribalNick->Flame</li>
+				<li>TribalNick->Pearl</li>
+				<li>TribalNick->Thunder</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

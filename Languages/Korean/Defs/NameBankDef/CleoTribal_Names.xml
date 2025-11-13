@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- 남성 이름 번역 -->
+	<NamerPersonCleoTribal.rulePack.rulesStrings.2>TribalName(p=0.5)->코누토</NamerPersonCleoTribal.rulePack.rulesStrings.2>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.3>TribalName(p=0.5)->망간</NamerPersonCleoTribal.rulePack.rulesStrings.3>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.4>TribalName(p=0.5)->밤보스</NamerPersonCleoTribal.rulePack.rulesStrings.4>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.5>TribalName(p=0.5)->파파요</NamerPersonCleoTribal.rulePack.rulesStrings.5>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.6>TribalName(p=0.5)->바난</NamerPersonCleoTribal.rulePack.rulesStrings.6>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.7>TribalName(p=0.5)->팔마르</NamerPersonCleoTribal.rulePack.rulesStrings.7>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.8>TribalName(p=0.5)->칵토스</NamerPersonCleoTribal.rulePack.rulesStrings.8>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.9>TribalName(p=0.5)->아가벤</NamerPersonCleoTribal.rulePack.rulesStrings.9>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.10>TribalName(p=0.5)->썬도르</NamerPersonCleoTribal.rulePack.rulesStrings.10>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.11>TribalName(p=0.5)->스토모</NamerPersonCleoTribal.rulePack.rulesStrings.11>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.12>TribalName(p=0.5)->티단</NamerPersonCleoTribal.rulePack.rulesStrings.12>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.13>TribalName(p=0.5)->웨이본</NamerPersonCleoTribal.rulePack.rulesStrings.13>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.14>TribalName(p=0.5)->리퍼</NamerPersonCleoTribal.rulePack.rulesStrings.14>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.15>TribalName(p=0.5)->코랄로</NamerPersonCleoTribal.rulePack.rulesStrings.15>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.16>TribalName(p=0.5)->켈핀</NamerPersonCleoTribal.rulePack.rulesStrings.16>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.17>TribalName(p=0.5)->셸로</NamerPersonCleoTribal.rulePack.rulesStrings.17>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.18>TribalName(p=0.5)->불카노</NamerPersonCleoTribal.rulePack.rulesStrings.18>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.19>TribalName(p=0.5)->블레이저</NamerPersonCleoTribal.rulePack.rulesStrings.19>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.20>TribalName(p=0.5)->토르낙스</NamerPersonCleoTribal.rulePack.rulesStrings.20>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.21>TribalName(p=0.5)->타이폰</NamerPersonCleoTribal.rulePack.rulesStrings.21>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.22>TribalName(p=0.5)->글라시오르</NamerPersonCleoTribal.rulePack.rulesStrings.22>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.23>TribalName(p=0.5)->쿼르조</NamerPersonCleoTribal.rulePack.rulesStrings.23>
+
+	<!-- 여성 이름 번역 -->
+	<NamerPersonCleoTribal.rulePack.rulesStrings.24>TribalName(p=0.5)->히비스카</NamerPersonCleoTribal.rulePack.rulesStrings.24>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.25>TribalName(p=0.5)->오르키다</NamerPersonCleoTribal.rulePack.rulesStrings.25>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.26>TribalName(p=0.5)->리파</NamerPersonCleoTribal.rulePack.rulesStrings.26>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.27>TribalName(p=0.5)->페탈라</NamerPersonCleoTribal.rulePack.rulesStrings.27>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.28>TribalName(p=0.5)->블루마</NamerPersonCleoTribal.rulePack.rulesStrings.28>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.29>TribalName(p=0.5)->로제아</NamerPersonCleoTribal.rulePack.rulesStrings.29>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.30>TribalName(p=0.5)->릴리아나</NamerPersonCleoTribal.rulePack.rulesStrings.30>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.31>TribalName(p=0.5)->재스민</NamerPersonCleoTribal.rulePack.rulesStrings.31>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.32>TribalName(p=0.5)->구아바나</NamerPersonCleoTribal.rulePack.rulesStrings.32>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.33>TribalName(p=0.5)->리치아</NamerPersonCleoTribal.rulePack.rulesStrings.33>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.34>TribalName(p=0.5)->피타야</NamerPersonCleoTribal.rulePack.rulesStrings.34>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.35>TribalName(p=0.5)->망고스타</NamerPersonCleoTribal.rulePack.rulesStrings.35>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.36>TribalName(p=0.5)->파시오나</NamerPersonCleoTribal.rulePack.rulesStrings.36>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.37>TribalName(p=0.5)->파피나</NamerPersonCleoTribal.rulePack.rulesStrings.37>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.38>TribalName(p=0.5)->브리자</NamerPersonCleoTribal.rulePack.rulesStrings.38>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.39>TribalName(p=0.5)->수나</NamerPersonCleoTribal.rulePack.rulesStrings.39>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.40>TribalName(p=0.5)->레이나</NamerPersonCleoTribal.rulePack.rulesStrings.40>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.41>TribalName(p=0.5)->펄리아</NamerPersonCleoTribal.rulePack.rulesStrings.41>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.42>TribalName(p=0.5)->코리나</NamerPersonCleoTribal.rulePack.rulesStrings.42>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.43>TribalName(p=0.5)->미스티</NamerPersonCleoTribal.rulePack.rulesStrings.43>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.44>TribalName(p=0.5)->루나</NamerPersonCleoTribal.rulePack.rulesStrings.44>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.45>TribalName(p=0.5)->스텔라</NamerPersonCleoTribal.rulePack.rulesStrings.45>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.46>TribalName(p=0.5)->오로라</NamerPersonCleoTribal.rulePack.rulesStrings.46>
+
+	<!-- 성씨 번역 -->
+	<NamerPersonCleoTribal.rulePack.rulesStrings.47>TribalLastName->음베키</NamerPersonCleoTribal.rulePack.rulesStrings.47>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.48>TribalLastName->카마우</NamerPersonCleoTribal.rulePack.rulesStrings.48>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.49>TribalLastName->은코시</NamerPersonCleoTribal.rulePack.rulesStrings.49>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.50>TribalLastName->주마</NamerPersonCleoTribal.rulePack.rulesStrings.50>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.51>TribalLastName->아데바요</NamerPersonCleoTribal.rulePack.rulesStrings.51>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.52>TribalLastName->오콘크워</NamerPersonCleoTribal.rulePack.rulesStrings.52>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.53>TribalLastName->만델라</NamerPersonCleoTribal.rulePack.rulesStrings.53>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.54>TribalLastName->은고지</NamerPersonCleoTribal.rulePack.rulesStrings.54>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.55>TribalLastName->알렉시오스</NamerPersonCleoTribal.rulePack.rulesStrings.55>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.56>TribalLastName->레오니다스</NamerPersonCleoTribal.rulePack.rulesStrings.56>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.57>TribalLastName->쿠리스</NamerPersonCleoTribal.rulePack.rulesStrings.57>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.58>TribalLastName->스타브로스</NamerPersonCleoTribal.rulePack.rulesStrings.58>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.59>TribalLastName->파파다키스</NamerPersonCleoTribal.rulePack.rulesStrings.59>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.60>TribalLastName->디미트리우</NamerPersonCleoTribal.rulePack.rulesStrings.60>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.61>TribalLastName->람세스</NamerPersonCleoTribal.rulePack.rulesStrings.61>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.62>TribalLastName->프톨레마이오스</NamerPersonCleoTribal.rulePack.rulesStrings.62>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.63>TribalLastName->카프레</NamerPersonCleoTribal.rulePack.rulesStrings.63>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.64>TribalLastName->아누비스</NamerPersonCleoTribal.rulePack.rulesStrings.64>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.65>TribalLastName->투트모세</NamerPersonCleoTribal.rulePack.rulesStrings.65>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.66>TribalLastName->네페루</NamerPersonCleoTribal.rulePack.rulesStrings.66>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.67>TribalLastName->선스톤</NamerPersonCleoTribal.rulePack.rulesStrings.67>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.68>TribalLastName->골드리프</NamerPersonCleoTribal.rulePack.rulesStrings.68>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.69>TribalLastName->타이드콜러</NamerPersonCleoTribal.rulePack.rulesStrings.69>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.70>TribalLastName->스톰본</NamerPersonCleoTribal.rulePack.rulesStrings.70>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.71>TribalLastName->웨이브브링어</NamerPersonCleoTribal.rulePack.rulesStrings.71>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.72>TribalLastName->어스셰이커</NamerPersonCleoTribal.rulePack.rulesStrings.72>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.73>TribalLastName->스카이댄서</NamerPersonCleoTribal.rulePack.rulesStrings.73>
+	<NamerPersonCleoTribal.rulePack.rulesStrings.74>TribalLastName->파이어키퍼</NamerPersonCleoTribal.rulePack.rulesStrings.74>
+
+	<!-- 별명 번역 -->
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.1>TribalNick->써니</NamerPersonCleoTribalNick.rulePack.rulesStrings.1>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.2>TribalNick->스톰</NamerPersonCleoTribalNick.rulePack.rulesStrings.2>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.3>TribalNick->리프</NamerPersonCleoTribalNick.rulePack.rulesStrings.3>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.4>TribalNick->셸</NamerPersonCleoTribalNick.rulePack.rulesStrings.4>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.5>TribalNick->코코</NamerPersonCleoTribalNick.rulePack.rulesStrings.5>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.6>TribalNick->웨이브</NamerPersonCleoTribalNick.rulePack.rulesStrings.6>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.7>TribalNick->브리즈</NamerPersonCleoTribalNick.rulePack.rulesStrings.7>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.8>TribalNick->페탈</NamerPersonCleoTribalNick.rulePack.rulesStrings.8>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.9>TribalNick->스파크</NamerPersonCleoTribalNick.rulePack.rulesStrings.9>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.10>TribalNick->타이드</NamerPersonCleoTribalNick.rulePack.rulesStrings.10>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.11>TribalNick->리프</NamerPersonCleoTribalNick.rulePack.rulesStrings.11>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.12>TribalNick->스톤</NamerPersonCleoTribalNick.rulePack.rulesStrings.12>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.13>TribalNick->플레임</NamerPersonCleoTribalNick.rulePack.rulesStrings.13>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.14>TribalNick->펄</NamerPersonCleoTribalNick.rulePack.rulesStrings.14>
+	<NamerPersonCleoTribalNick.rulePack.rulesStrings.15>TribalNick->썬더</NamerPersonCleoTribalNick.rulePack.rulesStrings.15>
+
+</LanguageData>

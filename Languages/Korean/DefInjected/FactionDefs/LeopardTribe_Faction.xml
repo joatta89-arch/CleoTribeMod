@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- 레오파드 부족 FactionDef 번역 -->
+	
+	<!-- 팩션 이름 -->
+	<LeopardClan.label>표범 부족</LeopardClan.label>
+	
+	<!-- 팩션 설명 -->
+	<LeopardClan.description>클레오 부족의 오랜 경쟁자인 표범 부족입니다. 그들은 정글 깊숙한 곳에 거주하며, 표범의 민첩함과 힘을 본받아 전투 기술을 연마합니다. 방패와 창으로 무장한 정예 전사들이 그들의 자랑입니다.</LeopardClan.description>
+	
+	<!-- 단수/복수 호칭 -->
+	<LeopardClan.pawnSingular>표범 부족원</LeopardClan.pawnSingular>
+	<LeopardClan.pawnsPlural>표범 부족원들</LeopardClan.pawnsPlural>
+	
+	<!-- 카테고리 태그 -->
+	<LeopardClan.categoryTag>표범 부족</LeopardClan.categoryTag>
+	
+	<!-- 리더 칭호 -->
+	<LeopardClan.leaderTitle>추장</LeopardClan.leaderTitle>
+
+</LanguageData>

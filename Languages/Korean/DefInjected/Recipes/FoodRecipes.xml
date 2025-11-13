@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Make_CuriosityBot_PackagedChocolate.label>포장된 초콜릿 만들기</Make_CuriosityBot_PackagedChocolate.label>
+	<Make_CuriosityBot_PackagedChocolate.description>초콜릿을 먹기 좋게 포장합니다. 5개의 초콜릿이 필요합니다.</Make_CuriosityBot_PackagedChocolate.description>
+	<Make_CuriosityBot_PackagedChocolate.jobString>초콜릿 포장 중</Make_CuriosityBot_PackagedChocolate.jobString>
+	<Make_CuriosityBot_PackagedCoconut.label>코코넛주스 만들기</Make_CuriosityBot_PackagedCoconut.label>
+	<Make_CuriosityBot_PackagedCoconut.description>코코넛을 선별하고 그 중 특별히 거대한 코코넛을 베이스로 코코넛 음료를 요리합니다.</Make_CuriosityBot_PackagedCoconut.description>
+	<Make_CuriosityBot_PackagedCoconut.jobString>코코넛 선별 중</Make_CuriosityBot_PackagedCoconut.jobString>
+</LanguageData>
