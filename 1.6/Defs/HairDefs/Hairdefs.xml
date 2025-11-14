@@ -3,6 +3,7 @@
 	<HairDef>
 		<defName>CuriosityBot_CleoCut0</defName>
 		<label>CleoCutElder</label>
+		<category>Urban</category>
 		<texPath>Things/Pawn/Humanlike/Hairs/CleoCut0</texPath>
 		<styleTags>
 			<li>Royal</li>
@@ -16,7 +17,7 @@
     <styleTags>
     <li>Tribal</li>
     <li>Royal</li>
-	<li>HairShort</li>
+	<li>Urban</li>
     </styleTags>
   </HairDef>
     <HairDef>
@@ -27,7 +28,18 @@
     <styleTags>
     <li>Tribal</li>
     <li>Royal</li>
-	<li>HairShort</li>
+	<li>Urban</li>
     </styleTags>
   </HairDef>
+	<HairDef>
+		<defName>CuriosityBot_CleoCutC</defName>
+		<label>CleoCutC</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/CleoCutC</texPath>
+		<styleTags>
+			<li>Tribal</li>
+			<li>Royal</li>
+			<li>Urban</li>
+		</styleTags>
+	</HairDef>
 </Defs>

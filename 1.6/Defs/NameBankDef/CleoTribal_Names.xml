@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- 클레오 부족 이름 생성 규칙 -->
+	<!-- 클레오 부족 이름 생성 규칙 (확장판) -->
 	<RulePackDef>
 		<defName>NamerPersonCleoTribal</defName>
 		<rulePack>
@@ -13,121 +13,240 @@
 				<!-- ============================================ -->
 				<!-- 남성 이름 (First Names - Male) -->
 				<!-- ============================================ -->
-				<li>TribalName(p=0.5)->Conuto</li>
-				<li>TribalName(p=0.5)->Mangan</li>
-				<li>TribalName(p=0.5)->Bambos</li>
-				<li>TribalName(p=0.5)->Papayo</li>
-				<li>TribalName(p=0.5)->Banan</li>
-				<li>TribalName(p=0.5)->Palmar</li>
-				<li>TribalName(p=0.5)->Cactos</li>
-				<li>TribalName(p=0.5)->Agaven</li>
-				<li>TribalName(p=0.5)->Thundor</li>
-				<li>TribalName(p=0.5)->Stormo</li>
-				<li>TribalName(p=0.5)->Tidan</li>
-				<li>TribalName(p=0.5)->Wavon</li>
-				<li>TribalName(p=0.5)->Reefer</li>
-				<li>TribalName(p=0.5)->Corallo</li>
-				<li>TribalName(p=0.5)->Kelpin</li>
-				<li>TribalName(p=0.5)->Shello</li>
-				<li>TribalName(p=0.5)->Vulcano</li>
-				<li>TribalName(p=0.5)->Blazor</li>
-				<li>TribalName(p=0.5)->Tornax</li>
-				<li>TribalName(p=0.5)->Typhon</li>
-				<li>TribalName(p=0.5)->Glacior</li>
-				<li>TribalName(p=0.5)->Quarzo</li>
+				<!-- 기존 이름들 -->
+				<li>TribalName(p=0.5)->코누토</li>
+				<li>TribalName(p=0.5)->망간</li>
+				<li>TribalName(p=0.5)->밤보스</li>
+				<li>TribalName(p=0.5)->파파요</li>
+				<li>TribalName(p=0.5)->바난</li>
+				<li>TribalName(p=0.5)->팔마르</li>
+				<li>TribalName(p=0.5)->칵토스</li>
+				<li>TribalName(p=0.5)->아가벤</li>
+				<li>TribalName(p=0.5)->썬도르</li>
+				<li>TribalName(p=0.5)->스토모</li>
+				<li>TribalName(p=0.5)->티단</li>
+				<li>TribalName(p=0.5)->웨이본</li>
+				<li>TribalName(p=0.5)->리퍼</li>
+				<li>TribalName(p=0.5)->코랄로</li>
+				<li>TribalName(p=0.5)->켈핀</li>
+				<li>TribalName(p=0.5)->셸로</li>
+				<li>TribalName(p=0.5)->불카노</li>
+				<li>TribalName(p=0.5)->블레이저</li>
+				<li>TribalName(p=0.5)->토르낙스</li>
+				<li>TribalName(p=0.5)->타이폰</li>
+				<li>TribalName(p=0.5)->글라시오르</li>
+				<li>TribalName(p=0.5)->쿼르조</li>
+				
+				<!-- 신규 추가 - 열대과일/식물 기반 -->
+				<li>TribalName(p=0.5)->두리안</li>        <!-- 두리안 -->
+				<li>TribalName(p=0.5)->타마린</li>        <!-- 타마린드 -->
+				<li>TribalName(p=0.5)->카카오스</li>      <!-- 카카오 -->
+				<li>TribalName(p=0.5)->아보칸</li>        <!-- 아보카도 -->
+				<li>TribalName(p=0.5)->람부토</li>        <!-- 람부탄 -->
+				<li>TribalName(p=0.5)->드라곤</li>        <!-- 드래곤프루트 -->
+				<li>TribalName(p=0.5)->카슈르</li>        <!-- 캐슈넛 -->
+				<li>TribalName(p=0.5)->칸도스</li>        <!-- 사탕수수 cane -->
+				<li>TribalName(p=0.5)->자코스</li>        <!-- 잭프루트 -->
+				<li>TribalName(p=0.5)->팔모스</li>        <!-- 야자 palm -->
+				<li>TribalName(p=0.5)->바오반</li>        <!-- 바오밥 -->
+				<li>TribalName(p=0.5)->마호간</li>        <!-- 마호가니 -->
+				<li>TribalName(p=0.5)->시나모르</li>      <!-- 시나몬 -->
+				<li>TribalName(p=0.5)->반얀</li>          <!-- 반얀나무 -->
+				<li>TribalName(p=0.5)->테코스</li>        <!-- 티크나무 teak -->
+				<!-- 고양이과 동물 기반 -->
+				<li>TribalName(p=0.5)->네코스</li>
+				<!-- 네코(猫) + 그리스식 어미 -->
+				<li>TribalName(p=0.5)->고양토르</li>
+				<!-- 한국어 고양이 → 고양 + tor -->
+				<li>TribalName(p=0.5)->마오칸</li>
+				<!-- 중국어 猫(māo) + 칸 -->
+				<li>TribalName(p=0.5)->가토스</li>
+				<!-- 스페인어 gato + s -->
+				<li>TribalName(p=0.5)->샤토르</li>
+				<!-- 프랑스어 chat → 샤토르 -->
+				<li>TribalName(p=0.5)->레오파르</li>
+				<!-- leopard → 레오파르 -->
+				<li>TribalName(p=0.5)->팬테론</li>
+				<!-- panthera → 팬테론 -->
+				<li>TribalName(p=0.5)->심반</li>
+				<!-- 스와힐리어 simba → 심반 -->
+				<li>TribalName(p=0.5)->레온토스</li>
+				<!-- león/lion + tos -->
+				<li>TribalName(p=0.5)->아슬란토</li>
+				<!-- 터키어 aslan + to -->
 				
 				<!-- ============================================ -->
 				<!-- 여성 이름 (First Names - Female) -->
 				<!-- ============================================ -->
-				<li>TribalName(p=0.5)->Hibisca</li>
-				<li>TribalName(p=0.5)->Orchida</li>
-				<li>TribalName(p=0.5)->Leafa</li>
-				<li>TribalName(p=0.5)->Petala</li>
-				<li>TribalName(p=0.5)->Bluma</li>
-				<li>TribalName(p=0.5)->Rosea</li>
-				<li>TribalName(p=0.5)->Lilliana</li>
-				<li>TribalName(p=0.5)->Jasmine</li>
-				<li>TribalName(p=0.5)->Guavana</li>
-				<li>TribalName(p=0.5)->Lychia</li>
-				<li>TribalName(p=0.5)->Pitaya</li>
-				<li>TribalName(p=0.5)->Mangosta</li>
-				<li>TribalName(p=0.5)->Passiona</li>
-				<li>TribalName(p=0.5)->Papina</li>
-				<li>TribalName(p=0.5)->Breeza</li>
-				<li>TribalName(p=0.5)->Sunnah</li>
-				<li>TribalName(p=0.5)->Rayna</li>
-				<li>TribalName(p=0.5)->Perlia</li>
-				<li>TribalName(p=0.5)->Corina</li>
-				<li>TribalName(p=0.5)->Misty</li>
-				<li>TribalName(p=0.5)->Luna</li>
-				<li>TribalName(p=0.5)->Stella</li>
-				<li>TribalName(p=0.5)->Aurora</li>
+				<!-- 기존 이름들 -->
+				<li>TribalName(p=0.5)->히비스카</li>
+				<li>TribalName(p=0.5)->오르키다</li>
+				<li>TribalName(p=0.5)->리파</li>
+				<li>TribalName(p=0.5)->페탈라</li>
+				<li>TribalName(p=0.5)->블루마</li>
+				<li>TribalName(p=0.5)->로제아</li>
+				<li>TribalName(p=0.5)->릴리아나</li>
+				<li>TribalName(p=0.5)->재스민</li>
+				<li>TribalName(p=0.5)->구아바나</li>
+				<li>TribalName(p=0.5)->리치아</li>
+				<li>TribalName(p=0.5)->피타야</li>
+				<li>TribalName(p=0.5)->망고스타</li>
+				<li>TribalName(p=0.5)->파시오나</li>
+				<li>TribalName(p=0.5)->파피나</li>
+				<li>TribalName(p=0.5)->브리자</li>
+				<li>TribalName(p=0.5)->수나</li>
+				<li>TribalName(p=0.5)->레이나</li>
+				<li>TribalName(p=0.5)->펄리아</li>
+				<li>TribalName(p=0.5)->코리나</li>
+				<li>TribalName(p=0.5)->미스티</li>
+				<li>TribalName(p=0.5)->루나</li>
+				<li>TribalName(p=0.5)->스텔라</li>
+				<li>TribalName(p=0.5)->오로라</li>
+				
+				<!-- 신규 추가 - 꽃/열대과일 기반 -->
+				<li>TribalName(p=0.5)->플루메리아</li>    <!-- 프랜지파니 -->
+				<li>TribalName(p=0.5)->안투라</li>        <!-- 안투리움 -->
+				<li>TribalName(p=0.5)->헬리아나</li>      <!-- 헬리코니아 -->
+				<li>TribalName(p=0.5)->파라디아</li>      <!-- 버드 오브 파라다이스 -->
+				<li>TribalName(p=0.5)->부게나</li>        <!-- 부겐빌레아 -->
+				<li>TribalName(p=0.5)->플루미나</li>      <!-- 플루메리아 변형 -->
+				<li>TribalName(p=0.5)->스타라</li>        <!-- 스타프루트/카람볼라 -->
+				<li>TribalName(p=0.5)->포멜라</li>        <!-- 포멜로 -->
+				<li>TribalName(p=0.5)->아세라</li>        <!-- 아세롤라 -->
+				<li>TribalName(p=0.5)->쿠파나</li>        <!-- 쿠푸아수 -->
+				<li>TribalName(p=0.5)->자보티나</li>      <!-- 재보티카바 -->
+				<li>TribalName(p=0.5)->카사나</li>        <!-- 카사바 -->
+				<li>TribalName(p=0.5)->마라야</li>        <!-- 마라쿠야/패션프루트 -->
+				<li>TribalName(p=0.5)->아카시아</li>      <!-- 아카시아 -->
+				<li>TribalName(p=0.5)->세라피나</li>      <!-- 세라핌 + 꽃 -->
+
+				<!-- 고양이과 동물 기반 여성형 -->
+				<li>TribalName(p=0.5)->네코라</li>
+				<!-- 네코(猫) + 여성 어미 -ra -->
+				<li>TribalName(p=0.5)->고야나</li>
+				<!-- 한국어 고양이 → 고야나 -->
+				<li>TribalName(p=0.5)->마오리나</li>
+				<!-- 중국어 猫(māo) + 리나 -->
+				<li>TribalName(p=0.5)->가티아</li>
+				<!-- 스페인어 gata(암고양이) + ia -->
+				<li>TribalName(p=0.5)->샤티나</li>
+				<!-- 프랑스어 chatte + 나 -->
+				<li>TribalName(p=0.5)->레오파라</li>
+				<!-- leopard → 레오파라 -->
+				<li>TribalName(p=0.5)->팬테라</li>
+				<!-- panthera 그대로 (원래 여성형) -->
+				<li>TribalName(p=0.5)->심바나</li>
+				<!-- 스와힐리어 simba + 나 -->
+				<li>TribalName(p=0.5)->아슬라나</li>
+				<!-- 터키어 aslan + 나 -->
+
+				<!-- 기존 게임 출연진 -->
+				<li>TribalName(p=0.5)->카미사</li>      <!-- 재보티카바 -->
+				<li>TribalName(p=0.5)->세코이</li>        <!-- 카사바 -->
+				<li>TribalName(p=0.5)->발레리</li>        <!-- 마라쿠야/패션프루트 -->
+				<li>TribalName(p=0.5)->발레르</li>      <!-- 아카시아 -->
+				<li>TribalName(p=0.5)->가벨라</li>      <!-- 세라핌 + 꽃 -->
+				<li>TribalName(p=0.5)->레오나</li>
 				
 				<!-- ============================================ -->
 				<!-- 성씨 (Last Names) -->
 				<!-- ============================================ -->
-				<!-- 아프리카계 -->
-				<li>TribalLastName->Mbeki</li>
-				<li>TribalLastName->Kamau</li>
-				<li>TribalLastName->Nkosi</li>
-				<li>TribalLastName->Zuma</li>
-				<li>TribalLastName->Adebayo</li>
-				<li>TribalLastName->Okonkwo</li>
-				<li>TribalLastName->Mandela</li>
-				<li>TribalLastName->Ngozi</li>
+				<!-- 아프리카계 (기존) -->
+				<li>TribalLastName->음베키</li>
+				<li>TribalLastName->카마우</li>
+				<li>TribalLastName->은코시</li>
+				<li>TribalLastName->주마</li>
+				<li>TribalLastName->아데바요</li>
+				<li>TribalLastName->오콘크워</li>
+				<li>TribalLastName->만델라</li>
+				<li>TribalLastName->은고지</li>
+				<li>TribalLastName->음완자</li>
+				<li>TribalLastName->치부에제</li>
+				<li>TribalLastName->오코예</li>
 				
-				<!-- 그리스계 -->
-				<li>TribalLastName->Alexios</li>
-				<li>TribalLastName->Leonidas</li>
-				<li>TribalLastName->Kouris</li>
-				<li>TribalLastName->Stavros</li>
-				<li>TribalLastName->Papadakis</li>
-				<li>TribalLastName->Dimitriou</li>
+				<!-- 그리스계 (기존) -->
+				<li>TribalLastName->알렉시오스</li>
+				<li>TribalLastName->알렉산드라</li>
+				<li>TribalLastName->레오니다스</li>
+				<li>TribalLastName->쿠리스</li>
+				<li>TribalLastName->스타브로스</li>
+				<li>TribalLastName->파파다키스</li>
+				<li>TribalLastName->디미트리우</li>
+				<li>TribalLastName->안드레아스</li>
+				<li>TribalLastName->니콜라오스</li>
+				<li>TribalLastName->코스타스</li>
 				
-				<!-- 이집트계 -->
-				<li>TribalLastName->Ramses</li>
-				<li>TribalLastName->Ptolemy</li>
-				<li>TribalLastName->Khafre</li>
-				<li>TribalLastName->Anubis</li>
-				<li>TribalLastName->Thutmose</li>
-				<li>TribalLastName->Neferu</li>
+				<!-- 이집트계 (기존) -->
+				<li>TribalLastName->람세스</li>
+				<li>TribalLastName->프톨레마이오스</li>
+				<li>TribalLastName->카프레</li>
+				<li>TribalLastName->아누비스</li>
+				<li>TribalLastName->투트모세</li>
+				<li>TribalLastName->네페루</li>
+				<li>TribalLastName->호렘헤브</li>
+				<li>TribalLastName->세티</li>
+				<li>TribalLastName->아멘호테프</li>
+				<li>TribalLastName->클레오파트라</li>
+				<li>TribalLastName->네페르티티</li>
+				<li>TribalLastName->투탕카멘</li>
+				<li>TribalLastName->하트셉수트</li>
+				<li>TribalLastName->토트메스</li>
+				<li>TribalLastName->오시리스</li>
+				<li>TribalLastName->이시스</li>
+				<li>TribalLastName->호루스</li>
+				<li>TribalLastName->바스테트</li>
+				<li>TribalLastName->아케나텐</li>
 				
-				<!-- 아마존/원주민 스타일 -->
-				<li>TribalLastName->Sunstone</li>
-				<li>TribalLastName->Goldleaf</li>
-				<li>TribalLastName->Tidecaller</li>
-				<li>TribalLastName->Stormborn</li>
-				<li>TribalLastName->Wavebringer</li>
-				<li>TribalLastName->Earthshaker</li>
-				<li>TribalLastName->Skydancer</li>
-				<li>TribalLastName->Firekeeper</li>
+				<!-- 아마존/원주민 스타일 (기존) -->
+				<li>TribalLastName->선스톤</li>
+				<li>TribalLastName->골드리프</li>
+				<li>TribalLastName->타이드콜러</li>
+				<li>TribalLastName->스톰본</li>
+				<li>TribalLastName->웨이브브링어</li>
+				<li>TribalLastName->어스셰이커</li>
+				<li>TribalLastName->스카이댄서</li>
+				<li>TribalLastName->파이어키퍼</li>
+				<li>TribalLastName->문댄서</li>
+				<li>TribalLastName->윈드러너</li>
+				<li>TribalLastName->레인메이커</li>
 				
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
 
-	<!-- 별명 생성 규칙 (선택사항) -->
+	<!-- 별명 생성 규칙 (확장판) -->
 	<RulePackDef>
 		<defName>NamerPersonCleoTribalNick</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[TribalNick]</li>
 				
-				<li>TribalNick->Sunny</li>
-				<li>TribalNick->Storm</li>
-				<li>TribalNick->Reef</li>
-				<li>TribalNick->Shell</li>
-				<li>TribalNick->Coco</li>
-				<li>TribalNick->Wave</li>
-				<li>TribalNick->Breeze</li>
-				<li>TribalNick->Petal</li>
-				<li>TribalNick->Spark</li>
-				<li>TribalNick->Tide</li>
-				<li>TribalNick->Leaf</li>
-				<li>TribalNick->Stone</li>
-				<li>TribalNick->Flame</li>
-				<li>TribalNick->Pearl</li>
-				<li>TribalNick->Thunder</li>
+				<!-- 기존 별명 -->
+				<li>TribalNick->써니</li>
+				<li>TribalNick->스톰</li>
+				<li>TribalNick->리프</li>
+				<li>TribalNick->셸</li>
+				<li>TribalNick->코코</li>
+				<li>TribalNick->웨이브</li>
+				<li>TribalNick->브리즈</li>
+				<li>TribalNick->페탈</li>
+				<li>TribalNick->스파크</li>
+				<li>TribalNick->타이드</li>
+				<li>TribalNick->리프</li>
+				<li>TribalNick->스톤</li>
+				<li>TribalNick->플레임</li>
+				<li>TribalNick->펄</li>
+				<li>TribalNick->썬더</li>
+				<li>TribalNick->문</li>
+				<li>TribalNick->스타</li>
+				<li>TribalNick->미스트</li>
+				<li>TribalNick->레인</li>
+				<li>TribalNick->스카이</li>
+				<li>TribalNick->블룸</li>
+				<li>TribalNick->클라우드</li>
+				<li>TribalNick->블레이즈</li>
+				<li>TribalNick->프로스트</li>
+				<li>TribalNick->애쉬</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

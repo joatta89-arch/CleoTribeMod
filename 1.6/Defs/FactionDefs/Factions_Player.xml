@@ -2,11 +2,11 @@
 <Defs>
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>Cleo_PlayerTribe</defName>
-		<label>New Cleo Clan</label>
-		<description>A small group of Tribal Clan</description>
+		<label>클레오 부족</label>
+		<description>새로운 정착지를 찾아 떠난 클레오 부족민들 입니다.</description>
 		<isPlayer>true</isPlayer>
-		<pawnSingular>member</pawnSingular>
-		<pawnsPlural>members</pawnsPlural>
+		<pawnSingular>부족민</pawnSingular>
+		<pawnsPlural>부족민들</pawnsPlural>
 		<basicMemberKind>Cleo_Tribal_Member</basicMemberKind>
 		<techLevel>Neolithic</techLevel>
 		<backstoryCategories>

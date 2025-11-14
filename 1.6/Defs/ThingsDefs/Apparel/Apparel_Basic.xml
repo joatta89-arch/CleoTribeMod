@@ -3,8 +3,8 @@
   <ThingDef ParentName="ApparelMakeableBase">
     
     <defName>CuriosityBot_TigerPanties</defName>
-    <label>TigerPanties</label>
-    <description>These panties exude the spirit of a brave tiger. For some reason, they seem to instill courage.</description>
+    <label>호랑이 무늬 팬티</label>
+    <description>용맹한 호랑이의 기운이 느껴지는 팬티입니다. 어째선지 용기가 솟아나는 것 같습니다.</description>
 	  <techLevel>Neolithic</techLevel>
 	  
     <graphicData>
@@ -42,7 +42,6 @@
 	  <recipeUsers>
 		  <li>CuriosityBot_Spot</li>
 		  <li>CraftingSpot</li>
-		  <li>FueledSmithy</li>
 	  </recipeUsers>
   </recipeMaker>
 
@@ -52,6 +51,7 @@
 	  <tags>
 		  <li>Neolithic</li>
 		  <li>Cleo_Apparel</li>
+		  <li>CleoApparelOnly</li>
 	  </tags>
 	  
      <bodyPartGroups> <li>Legs</li> </bodyPartGroups>
@@ -84,13 +84,100 @@
 	  
 	  
   </ThingDef>
-	
+	<ThingDef ParentName="ApparelMakeableBase">
+
+		<defName>CuriosityBot_CugarPanties</defName>
+		<label>표범 도트 팬티</label>
+		<description>표범의 도트무늬가 그려진 약간 매니악한 팬티입니다. 하지만 매니악하다는 것은 미래 문명의 이야기이고 원시 고대문명에선 세련된 디자인입니다.</description>
+		<techLevel>Neolithic</techLevel>
+
+		<graphicData>
+			<texPath>Things/Apparel/CugarPanties_Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<costStuffCount>50</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>50</MarketValue>
+			<Mass>0.1</Mass>
+			<EquipDelay>1.0</EquipDelay>
+			<WorkToMake>2000</WorkToMake>
+
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<Insulation_Heat>0.2</Insulation_Heat>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Heat>3.0</Insulation_Heat>
+			<MoveSpeed>0.30</MoveSpeed>
+		</statBases>
+
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<recipeUsers>
+				<li>CuriosityBot_Spot</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+
+
+		<apparel>
+
+			<tags>
+				<li>Neolithic</li>
+				<li>Cleo_Apparel</li>
+				<li>CleoApparelOnly</li>
+			</tags>
+
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<wornGraphicPath>Things/Apparel/CugarPanties/CugarPanties</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>0.05</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>0.10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>0.15</weight>
+					<only>(255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+
+
+	</ThingDef>
 	
   <ThingDef ParentName="ApparelMakeableBase">
     
     <defName>CuriosityBot_CoconutBra</defName>
-    <label>CoconutBra</label>
-    <description>This bra exudes a tropical vibe. It's firm yet breathable. Its introduction to men was met with fierce opposition from within the tribe, leading to its failure.</description>
+    <label>코코넛 브래지어</label>
+    <description>열대의 정취가 물씬 풍기는 브래지어입니다. 단단하지만 통풍이 잘 됩니다. 남성의 착용은 부족 내부의 격렬한 반대에 부딪혀 실패했습니다.</description>
 	  <techLevel>Neolithic</techLevel>
 	  
     <graphicData>
@@ -126,7 +213,6 @@
 		<recipeUsers>
 			<li>CuriosityBot_Spot</li>
 			<li>CraftingSpot</li>
-			<li>FueledSmithy</li>
 		</recipeUsers>
     </recipeMaker>
 
@@ -136,6 +222,7 @@
 		<tags>
 			<li>Neolithic</li>
 			<li>Cleo_Apparel</li>
+			<li>CleoApparelOnly</li>
 		</tags>
 		
       <bodyPartGroups> <li>Torso</li> <li>Shoulders</li> </bodyPartGroups>
@@ -174,8 +261,8 @@
 	<ThingDef ParentName="ApparelMakeableBase">
 
 		<defName>CuriosityBot_CrownA</defName>
-		<label>Gold plated crown</label>
-		<description>This headdress, reimagined from ancient culture, is extremely rare and unattainable for ordinary warriors. However, after numerous requests, gold-plated jewelry was finally permitted.</description>
+		<label>금도금 크라운</label>
+		<description>고대 문화를 복원한 머리장신구 입니다. 순수한 금으로 만들어진 것은 매우 귀하기에 일반적인 전사가 구할 수는 없지만, 많은 전사들의 요구끝에 금도금 장신구는 허용되었습니다.</description>
 		<techLevel>Neolithic</techLevel>
 		
 		<graphicData>
@@ -242,6 +329,7 @@
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<wornGraphicPath>Things/Apparel/CrownA/CrownA</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
+			
 		</apparel>
 
 		<thingCategories>

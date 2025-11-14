@@ -18,15 +18,19 @@
 	<!-- ============================================ -->
 	<FactionDef ParentName="TribeBase">
 		<defName>LeopardClan</defName>
-		
-		<label>Leopard Clan</label>
-		<description>this is leopard clan</description>
+		<label>거친 레오파드 부족</label>
+		<description>최고의 갸루가 되기 위하여 불철주야 노력하는 부족민으로 구성된 영토 의식이 강한 부족입니다. 평화로운 무역에는 열려 있지만, 그 외에는 비우호적이고 영토 의식이 강합니다. 부족의 전사들은 위험하다고 판단되는 자의 두개골을 박살 내는 데 주저하지 않습니다.</description>
 		<colorSpectrum>
 			<li>(0.95, 0.15, 0.40)</li>
 		</colorSpectrum>
 		<!-- 단수/복수 명칭 -->
-		<pawnSingular>leopard tribesman</pawnSingular>
-		<pawnsPlural>leopard tribespeople</pawnsPlural>
+		<pawnSingular>레오파드 부족민</pawnSingular>
+		<pawnsPlural>레오파드 부족민들</pawnsPlural>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Cleo_Leopard>999</Cleo_Leopard>
+		</xenotypeChances>
+		</xenotypeSet>
 		
 		<!-- 팩션 카테고리 -->
 		<categoryTag>Leopard Clan</categoryTag>
@@ -62,7 +66,7 @@
 		</backstoryFilters>
 		
 		<!-- 리더 -->
-		<leaderTitle>chief</leaderTitle>
+		<leaderTitle>최고의 갸루</leaderTitle>
 		<fixedLeaderKinds>
 			<li>Leopard_Tribal_Chief</li>
 		</fixedLeaderKinds>

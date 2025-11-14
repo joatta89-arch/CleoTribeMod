@@ -5,7 +5,7 @@
 		<scenario>
 			<name>부족의 여왕</name>
 			<summary>부족의 여왕 계승</summary>
-			<description>부족구성원이 많아지고, 분쟁이 커지자 당신은 당신을 따르는 전사들과 약간의 자원을 들고 독립 이주하기로 결심했습니다. 부족의 전통을 이은 새로운 여왕이 될 지, 작은 캠프로 남을지 어떨지는 당신의 손에 달렸습니다.</description>
+			<description>기존 부족의 구성원들이 많아지며 자원이 고갈되고 분쟁이 커지자, 당신은 당신을 따르는 전사들과 약간의 자원을 들고 독립 이주하기로 결심했습니다. 당신이 부족의 전통을 이은 새로운 여왕이 될 지, 작은 캠프로 머물다 사라질지는 당신의 손에 달렸습니다.</description>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>Cleo_PlayerTribe</factionDef>
@@ -28,8 +28,15 @@
 					<pawnChoiceCount>5</pawnChoiceCount>
 					<xenotypeCounts>
 						<li>
-							<count>5</count>
+							<count>1</count>
 							<requiredAtStart>True</requiredAtStart>
+							<xenotype>Cleo_TribalQueen</xenotype>
+							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+							<description>부족 여왕</description>
+						</li>
+						<li>
+							<count>4</count>
+							<requiredAtStart>False</requiredAtStart>
 							<xenotype>Cleo_Tribal</xenotype>
 							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
 							<description>부족 전사</description>
@@ -68,7 +75,7 @@
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>WoodLog</thingDef>
-					<count>300</count>
+					<count>500</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
@@ -90,15 +97,29 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>Bow_Short</thingDef>
+					<thingDef>CuriosityBot_Iklwa</thingDef>
+					<stuff>BlocksGranite</stuff>
 					<count>2</count>
-					<quality>Good</quality>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>CuriosityBot_KiteShield</thingDef>
 					<stuff>Leather_Plain</stuff>
 					<count>3</count>
+					<quality>Good</quality>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CuriosityBot_CoconutBra</thingDef>
+					<stuff>WoodLog</stuff>
+					<count>5</count>
+					<quality>Good</quality>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CuriosityBot_TigerPanties</thingDef>
+					<stuff>Leather_Plain</stuff>
+					<count>5</count>
 					<quality>Good</quality>
 				</li>
 				<li Class="ScenPart_CreateQuest">
@@ -117,6 +138,10 @@
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
 					<project>CuriosityBot_Basic</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ComplexFurniture</project>
 				</li>
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>

@@ -46,6 +46,9 @@
 			<MarketValue>45</MarketValue>
 			<MaxHitPoints>60</MaxHitPoints>
 		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.5</PainShockThreshold>
+		</equippedStatOffsets>
 		
 		<tickerType>Normal</tickerType>
 		
@@ -91,7 +94,7 @@
 				<li>Cleo_Apparel</li>
 			</tags>
 		</apparel>
-		
+
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<tradeNeverStack>true</tradeNeverStack>
 		<smeltable>false</smeltable>

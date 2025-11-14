@@ -5,6 +5,8 @@
 	<!-- ============================================ -->
 	<PawnKindDef Name="Cleo_TribalBase" Abstract="True">
 		<race>Human</race>
+
+		<!-- 핵심! -->
 		<defaultFactionType>Cleo_PlayerTribe</defaultFactionType>
 		<backstoryCategories>
 			<li>Tribal</li>
@@ -27,25 +29,66 @@
 			<li>Tribal</li>
 			<li>Cleo_Apparel</li>
 		</apparelTags>
-		<invFoodDef>
-			<li>Pemmican</li>
-		</invFoodDef>
 
 		<combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>0~1</combatEnhancingDrugsCount>
 
 	</PawnKindDef>
-	
+	<!-- ============================================ -->
+	<!-- 플레이어 부족 스타트 - 여왕 -->
+	<!-- ============================================ -->
+	<PawnKindDef ParentName="Cleo_TribalBase">
+		<defaultFactionType>Cleo_PlayerTribe</defaultFactionType>
+		<defName>Cleo_Tribal_Queen</defName>
+		<label>부족 여왕</label>
+		<combatPower>100</combatPower>
+		<gearHealthRange>1.0~2.5</gearHealthRange>
+		<apparelMoney>2400~2800</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		
+		
+		<apparelRequired>
+			<li>CuriosityBot_TigerPanties</li>
+		</apparelRequired>
+		
+		<apparelTags>
+			<li>Tribal</li>
+			<li>Cleo_Apparel</li>
+		</apparelTags>
+		
+		<apparelMoney>400~450</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		
+		<fixedGender>Female</fixedGender>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~10</range>
+			</li>
+			<li>
+				<skill>Social</skill>
+				<range>5~10</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>3~6</range>
+			</li>
+		</skills>
+	</PawnKindDef>
 	<!-- ============================================ -->
 	<!-- 플레이어 부족 스타트 - 일반 전사 -->
 	<!-- ============================================ -->
 	<PawnKindDef ParentName="Cleo_TribalBase">
 		<defaultFactionType>Cleo_PlayerTribe</defaultFactionType>
 		<defName>Cleo_Tribal_Member</defName>
-		<label>Clan Member</label>
+		<label>부족 구성원</label>
 		<combatPower>100</combatPower>
-		
 		<gearHealthRange>0.5~1.5</gearHealthRange>
+		
 		<apparelRequired>
 			<li>CuriosityBot_TigerPanties</li>
 		</apparelRequired>
@@ -53,9 +96,10 @@
 			<li>Tribal</li>
 			<li>Cleo_Apparel</li>
 		</apparelTags>
-		<apparelMoney>300~450</apparelMoney>
+		<apparelMoney>500~1450</apparelMoney>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		
+		<fixedGender>Female</fixedGender>
 		<skills>
 			<li>
 				<skill>Melee</skill>
@@ -89,7 +133,6 @@
 		<!-- 기본 외모 -->
 		<apparelTags>
 			<li>Tribal</li>
-			<li>Cleo_Apparel</li>
 		</apparelTags>
 		<invFoodDef>
 			<li>Pemmican</li>
@@ -97,7 +140,7 @@
 
 		<combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>0~1</combatEnhancingDrugsCount>
-		
+		<fixedGender>Female</fixedGender>
 		<!-- 기본 무기 -->
 		<weaponTags>
 			<li>NeolithicMeleeBasic</li>
@@ -115,7 +158,8 @@
 		
 		<gearHealthRange>0.5~1.5</gearHealthRange>
 		<apparelRequired>
-			<li>CuriosityBot_TigerPanties</li>
+			<li>CuriosityBot_CoconutBra</li>
+			<li>CuriosityBot_CugarPanties</li>
 		</apparelRequired>
 		<apparelMoney>100~150</apparelMoney>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
@@ -126,12 +170,14 @@
 			<li>NeolithicMeleeAdvanced</li>
 		</weaponTags>
 		
+		<fixedGender>Female</fixedGender>
 		<skills>
 			<li>
 				<skill>Melee</skill>
-				<range>4~8</range>
+				<range>4~6</range>
 			</li>
 		</skills>
+		
 	</PawnKindDef>
 
 	<!-- ============================================ -->
@@ -145,7 +191,8 @@
 		
 		<gearHealthRange>0.5~1.5</gearHealthRange>
 		<apparelRequired>
-			<li>CuriosityBot_TigerPanties</li>
+			<li>CuriosityBot_CoconutBra</li>
+			<li>CuriosityBot_CugarPanties</li>
 		</apparelRequired>
 		<apparelMoney>400~650</apparelMoney>
 		<apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
@@ -156,10 +203,11 @@
 			<li>NeolithicRangedDecent</li>
 		</weaponTags>
 		
+		<fixedGender>Female</fixedGender>
 		<skills>
 			<li>
 				<skill>Shooting</skill>
-				<range>4~10</range>
+				<range>4~8</range>
 			</li>
 			<li>
 				<skill>Animals</skill>
@@ -184,7 +232,8 @@
 		<!-- 방패 + 창 조합 -->
 		<apparelRequired>
 			<li>CuriosityBot_KiteShield</li>
-			<li>CuriosityBot_TigerPanties</li>
+			<li>CuriosityBot_CoconutBra</li>
+			<li>CuriosityBot_CugarPanties</li>
 		</apparelRequired>
 		
 		<weaponMoney>250~400</weaponMoney>
@@ -192,10 +241,11 @@
 			<li>NeolithicMeleeAdvanced</li>
 		</weaponTags>
 		
+		<fixedGender>Female</fixedGender>
 		<skills>
 			<li>
 				<skill>Melee</skill>
-				<range>8~14</range>
+				<range>8~10</range>
 			</li>
 		</skills>
 		
@@ -213,7 +263,7 @@
 		<factionLeader>true</factionLeader>
 		
 		<gearHealthRange>1.0~2.5</gearHealthRange>
-		<apparelMoney>1400~1800</apparelMoney>
+		<apparelMoney>2400~2800</apparelMoney>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 		
 		<!-- 왕관 착용 가능 -->
@@ -222,15 +272,24 @@
 			<li>Royal</li>
 		</apparelTags>
 		
+		<apparelRequired>
+			<li>CuriosityBot_CrownA</li>
+			<li>CuriosityBot_KiteShield</li>
+			<li>CuriosityBot_CoconutBra</li>
+			<li>CuriosityBot_CugarPanties</li>
+		</apparelRequired>
+		
 		<weaponMoney>300~500</weaponMoney>
 		<weaponTags>
 			<li>NeolithicMeleeAdvanced</li>
 		</weaponTags>
 		
+		<fixedGender>Female</fixedGender>
+		
 		<skills>
 			<li>
 				<skill>Melee</skill>
-				<range>10~16</range>
+				<range>13~15</range>
 			</li>
 			<li>
 				<skill>Social</skill>
@@ -255,8 +314,9 @@
 		<combatPower>25</combatPower>
 		
 		<gearHealthRange>0.3~1.2</gearHealthRange>
-				<apparelRequired>
-			<li>CuriosityBot_TigerPanties</li>
+		<apparelRequired>
+			<li>CuriosityBot_CoconutBra</li>
+			<li>CuriosityBot_CugarPanties</li>
 		</apparelRequired>
 		<apparelMoney>500~800</apparelMoney>
 		<apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
@@ -266,6 +326,7 @@
 			<li>NeolithicMeleeBasic</li>
 		</weaponTags>
 		
+		<fixedGender>Female</fixedGender>
 		<skills>
 			<li>
 				<skill>Crafting</skill>
@@ -297,7 +358,12 @@
 		<weaponTags>
 			<li>NeolithicMeleeBasic</li>
 		</weaponTags>
-		
+
+		<apparelRequired>
+			<li>CuriosityBot_CoconutBra</li>
+			<li>CuriosityBot_CugarPanties</li>
+		</apparelRequired>
+		<fixedGender>Female</fixedGender>
 		<!-- 상인 스킬 -->
 		<skills>
 			<li>
