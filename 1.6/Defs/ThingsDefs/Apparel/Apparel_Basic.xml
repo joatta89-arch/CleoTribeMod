@@ -38,14 +38,13 @@
   </statBases>
 
   <recipeMaker>
-    <researchPrerequisite>ComplexClothing</researchPrerequisite>
+	  <researchPrerequisite>CuriosityBot_Basic</researchPrerequisite>
 	  <recipeUsers>
 		  <li>CuriosityBot_Spot</li>
 		  <li>CraftingSpot</li>
 	  </recipeUsers>
   </recipeMaker>
-
-    
+	  
   <apparel>
 
 	  <tags>
@@ -122,7 +121,7 @@
 		</statBases>
 
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>CuriosityBot_Basic</researchPrerequisite>
 			<recipeUsers>
 				<li>CuriosityBot_Spot</li>
 				<li>CraftingSpot</li>
@@ -170,6 +169,7 @@
 			</options>
 		</colorGenerator>
 
+		
 
 	</ThingDef>
 	
@@ -209,7 +209,7 @@
 
     
 	  <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		  <researchPrerequisite>CuriosityBot_Basic</researchPrerequisite>
 		<recipeUsers>
 			<li>CuriosityBot_Spot</li>
 			<li>CraftingSpot</li>
@@ -254,7 +254,8 @@
 			  </li>
 		  </options>
 	  </colorGenerator>
-	  
+
+
   </ThingDef>
 	
 	
@@ -298,7 +299,7 @@
 		</costList>
 		
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>CuriosityBot_Temple</researchPrerequisite>
 			<recipeUsers>
 				<li>CuriosityBot_Spot</li>
 				<li>CraftingSpot</li>
@@ -352,6 +353,7 @@
 				</li>
 			</options>
 		</colorGenerator>
+
 
 	</ThingDef>
 

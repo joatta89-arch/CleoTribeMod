@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!-- CLEO TRIBE ADULTHOOD BACKSTORIES -->
+<!-- 클레오 부족 전용 성인 백스토리 - 결격사항 없음 -->
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_ShieldCaptain</defName>
+	<slot>Adulthood</slot>
+	<title>방패 전사 대장</title>
+	<titleShort>전사 대장</titleShort>
+	<baseDesc>[PAWN_nameDef]는 부족의 방패 전사들을 이끄는 대장이 되었습니다. [PAWN_pronoun]는 전투 기술뿐만 아니라 방패를 직접 제작하고 수리하는 법도 익혔으며, 젊은 전사들에게 방패 춤의 깊은 의미를 가르쳤습니다.</baseDesc>
+	<skillGains>
+		<Melee>5</Melee>
+		<Construction>3</Construction>
+		<Social>2</Social>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Violent</li>
+		<li>ManualSkilled</li>
+	</requiredWorkTags>
+	<forcedTraits>
+		<Brawler>0</Brawler>
+	</forcedTraits>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_TemplePriestess</defName>
+	<slot>Adulthood</slot>
+	<title>신전 여사제</title>
+	<titleShort>여사제</titleShort>
+	<baseDesc>[PAWN_nameDef]는 밀림 깊숙한 곳의 고대 신전을 지키는 여사제가 되었습니다. [PAWN_pronoun]는 신성한 의식을 주관하고, 부족민들의 고민을 듣고 조언하며, 신전 벽에 새겨진 고대 문자를 해독하는 임무를 맡았습니다.</baseDesc>
+	<skillGains>
+		<Social>6</Social>
+		<Artistic>5</Artistic>
+		<Intellectual>2</Intellectual>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Social</li>
+		<li>Artistic</li>
+	</requiredWorkTags>
+	<forcedTraits>
+		<PsychicSensitivity>1</PsychicSensitivity>
+	</forcedTraits>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_JungleHerbalist</defName>
+	<slot>Adulthood</slot>
+	<title>밀림 약초사</title>
+	<titleShort>약초사</titleShort>
+	<baseDesc>[PAWN_nameDef]는 밀림의 모든 약초와 독을 마스터한 치료사가 되었습니다. [PAWN_pronoun]는 생명을 구하는 치료약과 적을 쓰러뜨리는 독약을 모두 만들 수 있으며, 부족에서 가장 존경받는 치유자로 자리잡았습니다.</baseDesc>
+	<skillGains>
+		<Medicine>4</Medicine>
+		<Plants>4</Plants>
+		<Intellectual>1</Intellectual>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Caring</li>
+		<li>PlantWork</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_SpearInstructor</defName>
+	<slot>Adulthood</slot>
+	<title>창던지기 교관</title>
+	<titleShort>투창 교관</titleShort>
+	<baseDesc>[PAWN_nameDef]는 부족 최고의 창던지기 선수가 되어 젊은 전사들을 훈련시키는 교관이 되었습니다. [PAWN_pronoun]의 창은 백 걸음 밖의 목표물도 정확히 맞출 수 있으며, 근접전에서도 창을 능숙하게 다룹니다.</baseDesc>
+	<skillGains>
+		<Shooting>6</Shooting>
+		<Melee>3</Melee>
+		<Social>2</Social>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<forcedTraits>
+		<ShootingAccuracy>1</ShootingAccuracy>
+	</forcedTraits>
+	<spawnCategories>
+		<li>Tribal</li>
+		<li>TribalHunter</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_RiverMaster</defName>
+	<slot>Adulthood</slot>
+	<title>강의 어부 장인</title>
+	<titleShort>어부 장인</titleShort>
+	<baseDesc>[PAWN_nameDef]는 강에서의 삶을 완전히 마스터했습니다. [PAWN_pronoun]는 물고기를 잡는 최고의 기술을 가졌을 뿐만 아니라 강 수달과 물새들을 훈련시켜 사냥을 돕게 하는 독특한 능력을 발전시켰습니다.</baseDesc>
+	<skillGains>
+		<Animals>6</Animals>
+		<Shooting>4</Shooting>
+		<Cooking>2</Cooking>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Animals</li>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+		<li>TribalHunter</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_WarHero</defName>
+	<slot>Adulthood</slot>
+	<title>전쟁 영웅</title>
+	<titleShort>영웅</titleShort>
+	<baseDesc>[PAWN_nameDef]는 표범 부족과의 수많은 전투에서 용맹을 떨친 전설적인 전사입니다. [PAWN_pronoun]는 근접전과 원거리 전투 모두에 능하며, [PAWN_possessive] 이름만 들어도 적들이 두려워합니다.</baseDesc>
+	<skillGains>
+		<Melee>5</Melee>
+		<Shooting>5</Shooting>
+		<Social>3</Social>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<forcedTraits>
+		<Tough>0</Tough>
+	</forcedTraits>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_StarSage</defName>
+	<slot>Adulthood</slot>
+	<title>별자리 현자</title>
+	<titleShort>현자</titleShort>
+	<baseDesc>[PAWN_nameDef]는 별을 읽어 부족을 인도하는 현자가 되었습니다. [PAWN_pronoun]는 천체의 움직임으로 계절을 예측하고, 항해의 방향을 제시하며, 별의 배치로 미래를 점치는 능력을 가졌습니다.</baseDesc>
+	<skillGains>
+		<Intellectual>5</Intellectual>
+		<Social>3</Social>
+		<Shooting>2</Shooting>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Intellectual</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_BeastTamer</defName>
+	<slot>Adulthood</slot>
+	<title>야수 조련사</title>
+	<titleShort>조련사</titleShort>
+	<baseDesc>[PAWN_nameDef]는 밀림의 가장 위험한 짐승들조차 길들일 수 있는 신비한 능력을 가졌습니다. 재규어, 아나콘다, 심지어 야생 원숭이 무리까지도 [PAWN_possessive] 명령을 따르며, 부족민들은 [PAWN_objective]를 야수의 여왕이라 부릅니다.</baseDesc>
+	<skillGains>
+		<Animals>5</Animals>
+		<Melee>2</Melee>
+		<Medicine>1</Medicine>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Animals</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_TempleArchitect</defName>
+	<slot>Adulthood</slot>
+	<title>신전 건축가</title>
+	<titleShort>건축가</titleShort>
+	<baseDesc>[PAWN_nameDef]는 돌과 나무로 아름다운 신전을 짓는 건축 장인이 되었습니다. [PAWN_pronoun]는 바위를 캐고 다듬는 기술과 구조물을 설계하는 지혜를 모두 갖추었으며, [PAWN_possessive] 작품은 세대를 거쳐 남을 것입니다.</baseDesc>
+	<skillGains>
+		<Construction>7</Construction>
+		<Mining>4</Mining>
+		<Artistic>2</Artistic>
+	</skillGains>
+	<requiredWorkTags>
+		<li>ManualSkilled</li>
+		<li>ManualDumb</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_TradeNegotiator</defName>
+	<slot>Adulthood</slot>
+	<title>무역 협상가</title>
+	<titleShort>협상가</titleShort>
+	<baseDesc>[PAWN_nameDef]는 부족의 무역 대상을 이끄는 협상 전문가가 되었습니다. [PAWN_pronoun]는 여러 언어를 구사하며, 다른 부족들과의 외교와 거래에서 항상 최고의 조건을 이끌어냅니다. [PAWN_possessive] 날카로운 통찰력으로 상대의 의도를 꿰뚫어 봅니다.</baseDesc>
+	<skillGains>
+		<Social>7</Social>
+		<Intellectual>4</Intellectual>
+		<Animals>1</Animals>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Social</li>
+		<li>Intellectual</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+</Defs>

@@ -47,7 +47,7 @@
 			<MaxHitPoints>60</MaxHitPoints>
 		</statBases>
 		<equippedStatOffsets>
-			<PainShockThreshold>0.5</PainShockThreshold>
+			<PainShockThreshold>0.2</PainShockThreshold>
 		</equippedStatOffsets>
 		
 		<tickerType>Normal</tickerType>
@@ -131,6 +131,7 @@
 		
 		<!-- 제작 레시피 -->
 		<recipeMaker>
+			<researchPrerequisite>CuriosityBot_Combat</researchPrerequisite>
 			<recipeUsers>
 				<li>CuriosityBot_Spot</li>
 			</recipeUsers>
@@ -153,7 +154,8 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
-		
+
+
 	</ThingDef>
 
 </Defs>

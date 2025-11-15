@@ -17,7 +17,7 @@
 		<graphicData>
 			<texPath>Things/Building/Production/Philosophy/Philosophy</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,1)</drawSize>
+			<drawSize>(2,2)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>

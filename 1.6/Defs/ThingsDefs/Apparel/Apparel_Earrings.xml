@@ -64,12 +64,14 @@
 		
 		
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>CuriosityBot_Temple</researchPrerequisite>
 			<recipeUsers>
 				<li>CuriosityBot_Spot</li>
 				<li>CraftingSpot</li>
 			</recipeUsers>
 		</recipeMaker>
+
+
 	  
     <tradeTags>
       <li>BasicClothing</li>

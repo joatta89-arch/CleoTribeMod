@@ -1,19 +1,103 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <ResearchProjectDef>
-        <defName>CuriosityBot_Basic</defName>
-        <label>기본 연구</label>
-        <description>기본 연구입니다.</description>
-        <baseCost>500</baseCost>
+	<!-- ============================================ -->
+	<!-- 1단계: 기본 연구 (이미 존재) -->
+	<!-- ============================================ -->
+	<ResearchProjectDef>
+		<defName>CuriosityBot_Basic</defName>
+		<label>부족의 지혜</label>
+		<description>클레오 부족의 가장 기초적인 지식입니다. 밀림에서 살아가는 방법, 도구를 만드는 법, 불을 다루는 기술을 배웁니다.</description>
+		<baseCost>500</baseCost>
 		<tab>CuriosityBot_CleoTech</tab>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>
 		<researchViewY>0.5</researchViewY>
-		<!--<prerequisites>
-			<li>선행요구연구</li>
+	</ResearchProjectDef>
+
+	<!-- ============================================ -->
+	<!-- 2단계: 전투 기술 -->
+	<!-- ============================================ -->
+	<ResearchProjectDef>
+		<defName>CuriosityBot_Combat</defName>
+		<label>전투의 춤</label>
+		<description>방패를 들고 춤추듯 싸우는 클레오 부족의 전투 기술을 연마합니다. 창던지기와 방패 막기의 조화를 배웁니다.</description>
+		<baseCost>800</baseCost>
+		<tab>CuriosityBot_CleoTech</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.5</researchViewY>
+		<prerequisites>
+			<li>CuriosityBot_Basic</li>
 		</prerequisites>
-			-->
+	</ResearchProjectDef>
+
+	<!-- ============================================ -->
+	<!-- 3단계: 신전 의례 -->
+	<!-- ============================================ -->
+	<ResearchProjectDef>
+		<defName>CuriosityBot_Temple</defName>
+		<label>신전의 비밀</label>
+		<description>고대 신전에 새겨진 문자를 해독하고, 여신께 바치는 의식을 배웁니다. 정신적 힘을 키우는 방법을 익힙니다.</description>
+		<baseCost>1200</baseCost>
+		<tab>CuriosityBot_CleoTech</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.5</researchViewY>
+		<prerequisites>
+			<li>CuriosityBot_Combat</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- ============================================ -->
+	<!-- 4단계: 밀림 마스터 -->
+	<!-- ============================================ -->
+	<ResearchProjectDef>
+		<defName>CuriosityBot_Jungle</defName>
+		<label>밀림의 주인</label>
+		<description>밀림의 모든 동물과 식물을 완전히 이해합니다. 약초의 비밀, 야수를 길들이는 법, 숨겨진 자원을 찾는 방법을 배웁니다.</description>
+		<baseCost>1800</baseCost>
+		<tab>CuriosityBot_CleoTech</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>0.5</researchViewY>
+		<prerequisites>
+			<li>CuriosityBot_Temple</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- ============================================ -->
+	<!-- 5단계 분기A: 전쟁의 길 -->
+	<!-- ============================================ -->
+	<ResearchProjectDef>
+		<defName>CuriosityBot_War</defName>
+		<label>전쟁의 길</label>
+		<description>타 부족과의 오랜 전쟁에서 얻은 경험을 바탕으로, 더 강력한 전투 기술을 개발합니다. 적을 압도하는 힘을 얻습니다.</description>
+		<baseCost>2500</baseCost>
+		<tab>CuriosityBot_CleoTech</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>0.3</researchViewY>
+		<prerequisites>
+			<li>CuriosityBot_Jungle</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- ============================================ -->
+	<!-- 5단계 분기B: 조화의 길 -->
+	<!-- ============================================ -->
+	<ResearchProjectDef>
+		<defName>CuriosityBot_Harmony</defName>
+		<label>조화의 길</label>
+		<description>전쟁이 아닌 평화를 선택합니다. 자연과의 완벽한 조화, 더 높은 정신적 깨달음, 치유와 생명의 기술을 마스터합니다.</description>
+		<baseCost>2500</baseCost>
+		<tab>CuriosityBot_CleoTech</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>0.7</researchViewY>
+		<prerequisites>
+			<li>CuriosityBot_Jungle</li>
+		</prerequisites>
 	</ResearchProjectDef>
 
 </Defs>

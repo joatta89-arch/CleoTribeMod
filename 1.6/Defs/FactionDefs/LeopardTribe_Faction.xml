@@ -1,125 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<FactionDef Name="TribeBase" Abstract="True">
-		<raidLootValueFromPointsCurve>
-			<points>
-				<li>(35,     15)</li>
-				<li>(100,   120)</li>
-				<li>(1000,  500)</li>
-				<li>(2000,  800)</li>
-				<li>(4000, 1000)</li>
-			</points>
-		</raidLootValueFromPointsCurve>
-		<messageDefendersAttacking>{0} from {1} are attacking your {2}.</messageDefendersAttacking>
-	</FactionDef>
-	
+
+	<!-- ============================================ -->
+	<!-- 팩션 이름 생성기 (갸루 테마) -->
+	<!-- ============================================ -->
+	<RulePackDef>
+		<defName>CuriosityBot_NamerFaction_Leopard</defName>
+		<rulePack>
+			<rulesStrings>
+				<!-- 이름 구조: [형용사] 갸루 [명사] -->
+				<li>name->[gyaruAdjective] 갸루 [gyaruNoun]</li>
+				<li>name->[gyaruAdjective] 갸루들</li>
+				
+				<!-- 형용사 -->
+				<li>gyaruAdjective->빛나는</li>
+				<li>gyaruAdjective->최고의</li>
+				<li>gyaruAdjective->황금</li>
+				<li>gyaruAdjective->완벽한</li>
+				<li>gyaruAdjective->전설의</li>
+				<li>gyaruAdjective->화려한</li>
+				<li>gyaruAdjective->대단한</li>
+				<li>gyaruAdjective->눈부신</li>
+				<li>gyaruAdjective->찬란한</li>
+				<li>gyaruAdjective->멋진</li>
+				<li>gyaruAdjective->거친</li>
+				<li>gyaruAdjective->야생의</li>
+				<li>gyaruAdjective->민첩한</li>
+				<li>gyaruAdjective->강력한</li>
+				
+				<!-- 명사 -->
+				<li>gyaruNoun->부족</li>
+				<li>gyaruNoun->클랜</li>
+				<li>gyaruNoun->무리</li>
+				<li>gyaruNoun->연합</li>
+				<li>gyaruNoun->집단</li>
+				<li>gyaruNoun->동맹</li>
+				<li>gyaruNoun->세력</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- ============================================ -->
+	<!-- 정착지 이름 생성기 (갸루 테마) -->
+	<!-- ============================================ -->
+	<RulePackDef>
+		<defName>CuriosityBot_NamerSettlement_Leopard</defName>
+		<rulePack>
+			<rulesStrings>
+				<!-- 이름 구조: [형용사] 갸루 [장소] -->
+				<li>name->[settlementAdjective] 갸루 [settlementPlace]</li>
+				
+				<!-- 형용사 -->
+				<li>settlementAdjective->황금</li>
+				<li>settlementAdjective->빛나는</li>
+				<li>settlementAdjective->화려한</li>
+				<li>settlementAdjective->완벽한</li>
+				<li>settlementAdjective->눈부신</li>
+				<li>settlementAdjective->찬란한</li>
+				<li>settlementAdjective->멋진</li>
+				<li>settlementAdjective->거친</li>
+				<li>settlementAdjective->야생의</li>
+				<li>settlementAdjective->숨겨진</li>
+				<li>settlementAdjective->신성한</li>
+				<li>settlementAdjective->비밀의</li>
+				
+				<!-- 장소 -->
+				<li>settlementPlace->캠프</li>
+				<li>settlementPlace->마을</li>
+				<li>settlementPlace->거점</li>
+				<li>settlementPlace->은신처</li>
+				<li>settlementPlace->영역</li>
+				<li>settlementPlace->터전</li>
+				<li>settlementPlace->본거지</li>
+				<li>settlementPlace->요새</li>
+				<li>settlementPlace->정착지</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
 	<!-- ============================================ -->
 	<!-- 레오파드 부족 - 클레오 부족의 경쟁자 -->
 	<!-- ============================================ -->
-	<FactionDef ParentName="TribeBase">
+	<FactionDef ParentName="TribeRoughBase">
 		<defName>LeopardClan</defName>
 		<label>거친 레오파드 부족</label>
 		<description>최고의 갸루가 되기 위하여 불철주야 노력하는 부족민으로 구성된 영토 의식이 강한 부족입니다. 평화로운 무역에는 열려 있지만, 그 외에는 비우호적이고 영토 의식이 강합니다. 부족의 전사들은 위험하다고 판단되는 자의 두개골을 박살 내는 데 주저하지 않습니다.</description>
 		<colorSpectrum>
-			<li>(0.95, 0.15, 0.40)</li>
+			<li>(0.95, 0.80, 0.20)</li>
+			<li>(1.00, 0.85, 0.30)</li>
+			<li>(0.90, 0.75, 0.15)</li>
 		</colorSpectrum>
+		<!-- 팩션 아이콘 -->
+		<factionIconPath>World/WorldObjects/Expanding/LeopardClan</factionIconPath>
+		
+		<!-- ⭐ 갸루 테마 이름 생성기 -->
+		<factionNameMaker>CuriosityBot_NamerFaction_Leopard</factionNameMaker>
+		<settlementNameMaker>CuriosityBot_NamerSettlement_Leopard</settlementNameMaker>
+		
 		<!-- 단수/복수 명칭 -->
 		<pawnSingular>레오파드 부족민</pawnSingular>
 		<pawnsPlural>레오파드 부족민들</pawnsPlural>
-		<xenotypeSet Inherit="False">
-			<xenotypeChances>
-				<Cleo_Leopard>999</Cleo_Leopard>
-		</xenotypeChances>
-		</xenotypeSet>
 		
-		<!-- 팩션 카테고리 -->
-		<categoryTag>Leopard Clan</categoryTag>
-		<listOrderPriority>20</listOrderPriority>
-		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
-		<canMakeRandomly>true</canMakeRandomly>
-		<canStageAttacks>true</canStageAttacks>
-		
-		<!-- 팩션 아이콘 -->
-		<factionIconPath>World/WorldObjects/Expanding/SavageTribe</factionIconPath>
-		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-		
-		<!-- 이름 생성기 -->
-		<factionNameMaker>NamerPersonCleoTribal</factionNameMaker>
-		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
-		
-		<!-- 기술 레벨 -->
-		<techLevel>Neolithic</techLevel>
-		
-		<!-- 문화 (림월드의 부족민 문화는 코루난(Corunan)임-->
-		<allowedCultures>
-			<li>Corunan</li>
-		</allowedCultures>
-		
-		<!-- 배경 스토리 필터 -->
-		<backstoryFilters>
-			<li>
-				<categories>
-					<li>Tribal</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-		
+
 		<!-- 리더 -->
 		<leaderTitle>최고의 갸루</leaderTitle>
 		<fixedLeaderKinds>
 			<li>Leopard_Tribal_Chief</li>
 		</fixedLeaderKinds>
 		
-		<!-- 팩션 색상 (금발 느낌의 황금빛) -->
-		<colorSpectrum>
-			<li>(0.95, 0.80, 0.20)</li>
-			<li>(1.00, 0.85, 0.30)</li>
-			<li>(0.90, 0.75, 0.15)</li>
-		</colorSpectrum>
+		<!-- 제노타입 설정 -->
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Cleo_Leopard>999</Cleo_Leopard>
+			</xenotypeChances>
+		</xenotypeSet>
 		
-		<!-- 적대 관계 설정 -->
-		<permanentEnemy>false</permanentEnemy>
-		
-		<!-- 레이드 빈도 -->
-		<raidCommonalityFromPointsCurve>
-			<points>
-				<li>(0, 1)</li>
-				<li>(3000, 1.8)</li>
-				<li>(50000, 1.0)</li>
-			</points>
-		</raidCommonalityFromPointsCurve>
-		
-		<!-- 교역 상단 종류 -->
-		<caravanTraderKinds>
-			<li>Caravan_Neolithic_BulkGoods</li>
-			<li>Caravan_Neolithic_WarMerchant</li>
-		</caravanTraderKinds>
-		
-		<visitorTraderKinds>
-			<li>Visitor_Neolithic_Standard</li>
-		</visitorTraderKinds>
-		
-		<baseTraderKinds>
-			<li>Base_Neolithic_Standard</li>
-		</baseTraderKinds>
-		
-		<!-- 도착 온도 범위 -->
-		<allowedArrivalTemperatureRange>-10~50</allowedArrivalTemperatureRange>
-		<!-- 최대 폰 비용 커브 -->
-		<maxPawnCostPerTotalPointsCurve>
-			<points>
-				<li>(0, 35)</li>
-				<li>(70, 50)</li>
-				<li>(800, 100)</li>
-				<li>(1300, 150)</li>
-				<li>(100000, 10000)</li>
-			</points>
-		</maxPawnCostPerTotalPointsCurve>
-		
-		<!-- 폰 그룹 구성 -->
-		<pawnGroupMakers>
-			<!-- 초반 전투 그룹 (약함) -->
+		<!-- 폰 그룹 구성 (레오파드 전용) -->
+		<pawnGroupMakers Inherit="False">
+			<!-- 전투 그룹 1 - 초반 -->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
@@ -130,7 +128,7 @@
 				</options>
 			</li>
 			
-			<!-- 중반 전투 그룹 (보통) -->
+			<!-- 전투 그룹 2 - 중반 -->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>60</commonality>
@@ -141,7 +139,7 @@
 				</options>
 			</li>
 			
-			<!-- 후반 전투 그룹 (강함) -->
+			<!-- 전투 그룹 3 - 후반 -->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>40</commonality>
@@ -152,23 +150,45 @@
 				</options>
 			</li>
 			
+			<!-- 평화 그룹 -->
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Leopard_Tribal_Villager>20</Leopard_Tribal_Villager>
+					<Leopard_Tribal_Warrior>5</Leopard_Tribal_Warrior>
+					<Leopard_Tribal_Hunter>5</Leopard_Tribal_Hunter>
+				</options>
+			</li>
+			
+			<!-- 교역 상단 -->
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Leopard_Tribal_Trader>1</Leopard_Tribal_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+				</carriers>
+				<guards>
+					<Leopard_Tribal_Warrior>7</Leopard_Tribal_Warrior>
+					<Leopard_Tribal_Hunter>3</Leopard_Tribal_Hunter>
+				</guards>
+			</li>
+			
 			<!-- 정착지 구성 -->
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
 					<Leopard_Tribal_Villager>20</Leopard_Tribal_Villager>
-					<Leopard_Tribal_Warrior>10</Leopard_Tribal_Warrior>
-					<Leopard_Tribal_Hunter>8</Leopard_Tribal_Hunter>
+					<Leopard_Tribal_Warrior>15</Leopard_Tribal_Warrior>
+					<Leopard_Tribal_Hunter>10</Leopard_Tribal_Hunter>
 					<Leopard_Tribal_EliteWarrior>5</Leopard_Tribal_EliteWarrior>
-					<Leopard_Tribal_Chief>2</Leopard_Tribal_Chief>
+					<Leopard_Tribal_Chief>1</Leopard_Tribal_Chief>
 				</options>
 			</li>
 		</pawnGroupMakers>
-		
-		<!-- 기타 설정 -->
-		<canUseAvoidGrid>true</canUseAvoidGrid>
-		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<configurationListOrderPriority>100</configurationListOrderPriority>
 		
 	</FactionDef>
 

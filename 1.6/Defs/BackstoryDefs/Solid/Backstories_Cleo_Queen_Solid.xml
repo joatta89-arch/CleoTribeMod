@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Solid 백스토리 부모 정의 (랜덤 생성 불가) -->
+  <BackStoryDef Abstract="True" Name="CuriosityBot_Solid">
+    <shuffleable>false</shuffleable>
+  </BackStoryDef>
+
+  <!-- 클레오 부족 여왕 전용 백스토리 -->
+  
+  <BackstoryDef ParentName="CuriosityBot_Solid">
+    <defName>CuriosityBot_Cleo_SacredCoconutChild</defName>
+    <title>열매를 먹어버린 아이</title>
+    <titleShort>선택받은 아이</titleShort>
+    <slot>Childhood</slot>
+    <baseDesc>어린 [PAWN_nameDef]는 어느 날 배가 너무 고파서 부족에서 금지된 신성한 코코넛 나무에 몰래 올라갔습니다. 천 년 동안 누구도 올라가지 못했던 거룩한 나무였지만, [PAWN_pronoun]는 그냥 배가 고팠을 뿐이었습니다. 코코넛을 먹다가 들켜서 대죄를 저질렀다고 심판받을 뻔했으나, 부족의 원로가 오래된 예언을 기억해냈습니다: "선택받은 자만이 신성한 나무에 오를 수 있다." 그 이후 [PAWN_nameDef]는 "선택받은 아이"로 떠받들어지며 특별한 교육을 받게 되었습니다.</baseDesc>
+    <skillGains>
+      <Social>2</Social>
+      <Intellectual>2</Intellectual>
+      <Plants>3</Plants>
+    </skillGains>
+    <disallowedTraits>
+      <Psychopath>0</Psychopath>
+      <Greedy>0</Greedy>
+    </disallowedTraits>
+    <spawnCategories>
+		<li>Cleo_Queen</li>
+    </spawnCategories>
+    <shuffleable>false</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="CuriosityBot_Solid">
+    <defName>CuriosityBot_Cleo_ReluctantQueen</defName>
+    <title>여정을 떠나는 여왕</title>
+    <titleShort>클레오 여왕</titleShort>
+    <slot>Adulthood</slot>
+    <baseDesc>"선택받은 자"라는 꼬리표를 달고 자라며, [PAWN_nameDef]는 원하든 원하지 않든 리더십과 전투술을 배워야 했습니다. 처음에는 황당하고 부담스러웠지만, 시간이 지나며 [PAWN_pronoun]는 진심으로 부족을 사랑하게 되었습니다. 표범 부족과의 전쟁에서 놀라운 용기를 보이며 부족을 승리로 이끌었고, 부족민들은 [PAWN_objective]를 여왕으로 추대했습니다. "배고파서 코코넛을 먹었던 아이"는 이제 클레오 부족의 위대한 여왕이 되었습니다.</baseDesc>
+    <skillGains>
+      <Social>4</Social>
+      <Melee>5</Melee>
+      <Shooting>4</Shooting>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <forcedTraits>
+      <Kind>0</Kind>
+      <Nerves>1</Nerves>
+    </forcedTraits>
+    <disallowedTraits>
+      <Psychopath>0</Psychopath>
+      <Greedy>0</Greedy>
+      <Bloodlust>0</Bloodlust>
+    </disallowedTraits>
+    <requiredWorkTags>
+      <li>Social</li>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+		<li>Cleo_Queen</li>
+    </spawnCategories>
+    <shuffleable>false</shuffleable>
+  </BackstoryDef>
+
+</Defs>

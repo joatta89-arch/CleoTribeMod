@@ -90,10 +90,12 @@
 		</comps>
 
 		<recipeMaker>
+			<researchPrerequisite>CuriosityBot_Combat</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		
 	</ThingDef>
 
 </Defs>

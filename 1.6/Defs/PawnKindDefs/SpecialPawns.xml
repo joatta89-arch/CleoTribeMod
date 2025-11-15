@@ -14,7 +14,7 @@
 		<!-- 필수: 초기 저항력 범위 -->
 		<initialResistanceRange>25~35</initialResistanceRange>
 		<initialWillRange>5~8</initialWillRange>
-		
+		<fixedGender>Male</fixedGender>
 		<!-- 클레오 부족 이름 사용 (C#에서 강제 변경하지만 기본값) -->
 		<nameMaker>NamerPersonCleoTribal</nameMaker>
 		
@@ -30,7 +30,6 @@
 		<weaponTags>
 			<li>NeolithicMeleeAdvanced</li>
 		</weaponTags>
-		
 		<!-- 노인 스킬 -->
 		<skills>
 			<li>
@@ -54,6 +53,7 @@
 		<initialResistanceRange>15~25</initialResistanceRange>
 		<initialWillRange>3~6</initialWillRange>
 		
+		<fixedGender>Male</fixedGender>
 		<!-- 클레오 부족 이름 사용 (C#에서 강제 변경하지만 기본값) -->
 		<nameMaker>NamerPersonCleoTribal</nameMaker>
 		

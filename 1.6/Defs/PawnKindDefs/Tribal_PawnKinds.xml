@@ -46,11 +46,6 @@
 		<apparelMoney>2400~2800</apparelMoney>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 		
-		
-		<apparelRequired>
-			<li>CuriosityBot_TigerPanties</li>
-		</apparelRequired>
-		
 		<apparelTags>
 			<li>Tribal</li>
 			<li>Cleo_Apparel</li>
@@ -60,7 +55,7 @@
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		
 		<backstoryCategories>
-			<li>Tribal</li>
+			<li>Cleo_Queen</li>  
 		</backstoryCategories>
 		
 		<fixedGender>Female</fixedGender>
@@ -71,11 +66,11 @@
 			</li>
 			<li>
 				<skill>Social</skill>
-				<range>5~10</range>
+				<range>6~10</range>
 			</li>
 			<li>
 				<skill>Intellectual</skill>
-				<range>3~6</range>
+				<range>4~6</range>
 			</li>
 		</skills>
 	</PawnKindDef>
@@ -85,7 +80,7 @@
 	<PawnKindDef ParentName="Cleo_TribalBase">
 		<defaultFactionType>Cleo_PlayerTribe</defaultFactionType>
 		<defName>Cleo_Tribal_Member</defName>
-		<label>부족 구성원</label>
+		<label>부족 전사</label>
 		<combatPower>100</combatPower>
 		<gearHealthRange>0.5~1.5</gearHealthRange>
 		
@@ -98,6 +93,11 @@
 		</apparelTags>
 		<apparelMoney>500~1450</apparelMoney>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		
+		<backstoryCategories>
+			<li>Tribal</li>
+			<li>Cleo_Tribal</li>
+		</backstoryCategories>
 		
 		<fixedGender>Female</fixedGender>
 		<skills>
@@ -226,7 +226,7 @@
 		<combatPower>60</combatPower>
 		
 		<gearHealthRange>0.7~2.0</gearHealthRange>
-		<apparelMoney>500~800</apparelMoney>
+		<apparelMoney>800~1000</apparelMoney>
 		<apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
 		
 		<!-- 방패 + 창 조합 -->

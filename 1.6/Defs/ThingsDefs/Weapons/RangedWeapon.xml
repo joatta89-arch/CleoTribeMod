@@ -50,6 +50,7 @@
 	  </weaponClasses>
 
     <recipeMaker>
+	<researchPrerequisite>CuriosityBot_Basic</researchPrerequisite>
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
@@ -87,6 +88,8 @@
         <cooldownTime>2.0</cooldownTime>
       </li>
     </tools>
+	  
+	  
   </ThingDef>
 
   <ThingDef ParentName="BaseProjectileNeolithic">
@@ -148,13 +151,6 @@
 			<li>TribalRangedWeapon</li>
 		</weaponClasses>
 
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>3</Crafting>
-			</skillRequirements>
-			<displayPriority>500</displayPriority>
-		</recipeMaker>
-		
 		<!-- 생체코딩 -->
 		<comps>
 			<li Class="CompProperties_Biocodable"/>

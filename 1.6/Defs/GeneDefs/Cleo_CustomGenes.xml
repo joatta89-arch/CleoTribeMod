@@ -88,17 +88,12 @@
 		</li>
 	</forcedTraits>
 		
-    <statOffsets>
-      <MeleeDodgeChance>0.15</MeleeDodgeChance>  <!-- 회피 +15% -->
-      <MeleeHitChance>0.10</MeleeHitChance>  <!-- 명중 +10% -->
-    </statOffsets>
-    
     <statFactors>
 		<MeleeDamageFactor>1.3</MeleeDamageFactor>  <!-- 데미지 +30% -->
 		<Fertility>3</Fertility><!-- 생식 +300% -->
     </statFactors>
 		<painOffset>-0.1</painOffset> <!-- 고통 저항 +10% -->
-    
+		
 		<biostatMet>-3</biostatMet>  <!-- 대사 비용 -->
 		<biostatCpx>4</biostatCpx>  <!-- 복잡도 -->
 		

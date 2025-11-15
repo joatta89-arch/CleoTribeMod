@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!-- CLEO TRIBE CHILDHOOD BACKSTORIES -->
+<!-- 클레오 부족 전용 어린이 백스토리 - 결격사항 없음 -->
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_ShieldDancer</defName>
+	<slot>Childhood</slot>
+	<title>방패 춤 견습생</title>
+	<titleShort>방패 춤꾼</titleShort>
+	<baseDesc>[PAWN_nameDef]는 어머니에게서 신성한 방패 춤을 배웠습니다. [PAWN_pronoun]는 전투 훈련과 의식 춤을 결합한 흐르는 듯한 동작을 수없이 연습하며 몸과 정신을 모두 단련했습니다.</baseDesc>
+	<skillGains>
+		<Melee>2</Melee>
+		<Construction>2</Construction>
+		<Artistic>2</Artistic>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Violent</li>
+		<li>ManualSkilled</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_TempleDancer</defName>
+	<slot>Childhood</slot>
+	<title>신전 무용수</title>
+	<titleShort>무용수</titleShort>
+	<baseDesc>[PAWN_nameDef]는 밀림 신전에서 신성한 춤을 추도록 선택받았습니다. 수년간의 연습을 통해 [PAWN_pronoun]는 동작으로 이야기를 전달하고 관중의 감정을 읽는 법을 배웠습니다.</baseDesc>
+	<skillGains>
+		<Social>4</Social>
+		<Artistic>4</Artistic>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Social</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_JungleGatherer</defName>
+	<slot>Childhood</slot>
+	<title>밀림 채집가</title>
+	<titleShort>채집가</titleShort>
+	<baseDesc>[PAWN_nameDef]는 어린 시절 울창한 밀림에서 코코넛, 야자 열매, 약초를 채집하며 보냈습니다. [PAWN_pronoun]는 먹을 수 있는 식물을 구별하고 최고의 과일 나무로 안내해주는 화려한 새들과 친구가 되는 법을 배웠습니다.</baseDesc>
+	<skillGains>
+		<Plants>3</Plants>
+		<Animals>3</Animals>
+	</skillGains>
+	<requiredWorkTags>
+		<li>PlantWork</li>
+		<li>Animals</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_RiverChild</defName>
+	<slot>Childhood</slot>
+	<title>강의 아이</title>
+	<titleShort>강의 아이</titleShort>
+	<baseDesc>[PAWN_nameDef]는 밀림을 관통하는 큰 강가에서 자랐습니다. [PAWN_pronoun]는 치명적인 정확도로 물고기를 창으로 잡는 법과 강 수달들을 훈련시켜 사냥을 돕게 하는 법을 배웠습니다.</baseDesc>
+	<skillGains>
+		<Shooting>3</Shooting>
+		<Animals>3</Animals>
+		<Cooking>1</Cooking>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Violent</li>
+		<li>Animals</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_SpearThrower</defName>
+	<slot>Childhood</slot>
+	<title>어린 창던지기 선수</title>
+	<titleShort>창던지기</titleShort>
+	<baseDesc>어린 시절부터 [PAWN_nameDef]는 창던지기에 뛰어난 재능을 보였습니다. 부족의 전사들이 [PAWN_objective]를 거두어 원거리와 근접 전투 기술을 모두 가르쳤습니다.</baseDesc>
+	<skillGains>
+		<Shooting>3</Shooting>
+		<Melee>1</Melee>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_HerbApprentice</defName>
+	<slot>Childhood</slot>
+	<title>약초 견습생</title>
+	<titleShort>치료사</titleShort>
+	<baseDesc>[PAWN_nameDef]는 부족의 원로 약초학자에게 치료 식물을 구별하고 약을 준비하는 법을 배웠습니다. [PAWN_pronoun]는 어떤 밀림 꽃이 열을 내리고 어떤 뿌리가 부러진 뼈를 치료하는지 배웠습니다.</baseDesc>
+	<skillGains>
+		<Medicine>5</Medicine>
+		<Plants>3</Plants>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Caring</li>
+		<li>PlantWork</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_LeopardTracker</defName>
+	<slot>Childhood</slot>
+	<title>표범 추적자</title>
+	<titleShort>추적자</titleShort>
+	<baseDesc>[PAWN_nameDef]는 밀림을 통과하는 경쟁 부족인 표범 부족의 움직임을 추적하는 법을 배웠습니다. [PAWN_pronoun]는 예리한 관찰 능력을 키웠고 사냥 새들을 훈련시켜 정찰하게 하는 법을 배웠습니다.</baseDesc>
+	<skillGains>
+		<Shooting>3</Shooting>
+		<Animals>4</Animals>
+		<Intellectual>1</Intellectual>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Violent</li>
+		<li>Animals</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_StarGazer</defName>
+	<slot>Childhood</slot>
+	<title>별자리 관찰자</title>
+	<titleShort>항해사</titleShort>
+	<baseDesc>[PAWN_nameDef]는 부족의 항해사들과 함께 밤을 지새우며 별을 연구했습니다. [PAWN_pronoun]는 방향을 찾기 위해 별자리를 읽고 천체의 움직임을 관찰하여 날씨 패턴을 예측하는 법을 배웠습니다.</baseDesc>
+	<skillGains>
+		<Intellectual>5</Intellectual>
+		<Shooting>2</Shooting>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Intellectual</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_WarOrphan</defName>
+	<slot>Childhood</slot>
+	<title>전쟁 고아 생존자</title>
+	<titleShort>생존자</titleShort>
+	<baseDesc>약탈자들이 [PAWN_nameDef]의 마을을 공격했을 때, [PAWN_pronoun]는 가족을 잃었지만 밀림에 숨어 살아남았습니다. [PAWN_pronoun]는 다른 클레오 마을이 [PAWN_objective]를 찾을 때까지 스스로 음식을 채집하고 조잡한 무기를 만들며 홀로 살아가는 법을 배웠습니다.</baseDesc>
+	<skillGains>
+		<Melee>3</Melee>
+		<Plants>3</Plants>
+		<Crafting>2</Crafting>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Violent</li>
+		<li>ManualSkilled</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+	<defName>CuriosityBot_Cleo_TradingChild</defName>
+	<slot>Childhood</slot>
+	<title>무역 대상 아이</title>
+	<titleShort>상인</titleShort>
+	<baseDesc>[PAWN_nameDef]는 부족의 무역 대상과 함께 여행하며 먼 마을들을 방문하고 여러 방언을 배웠습니다. [PAWN_pronoun]는 날카로운 협상 기술을 익히고 진귀한 물건의 가치를 평가하는 법을 배웠습니다.</baseDesc>
+	<skillGains>
+		<Social>4</Social>
+		<Intellectual>3</Intellectual>
+		<Animals>1</Animals>
+	</skillGains>
+	<requiredWorkTags>
+		<li>Social</li>
+		<li>Intellectual</li>
+	</requiredWorkTags>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+</BackstoryDef>
+
+</Defs>
