@@ -12,7 +12,12 @@
 			<drawSize>1.0</drawSize>
 		</graphicData>
 
-		<techLevel>Medieval</techLevel>
+		<techLevel>Neolithic</techLevel>
+
+		<weaponTags>
+			<li>TribalShieldCompatible</li>
+			<li>CleoTribalWeaponRelic</li>
+		</weaponTags>
 
 		<statBases>
 			<WorkToMake>8000</WorkToMake>

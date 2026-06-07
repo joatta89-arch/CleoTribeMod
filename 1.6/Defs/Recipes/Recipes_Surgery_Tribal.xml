@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ============================================ -->
+	<!-- 클레오 부족 원시 보철물 - 수술 레시피 -->
+	<!-- ============================================ -->
+
+	<!-- ============================================ -->
+	<!-- 호루스의 눈 설치 수술 -->
+	<!-- ============================================ -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>CuriosityBot_InstallTribalEye</defName>
+		<label>호루스의 눈 설치</label>
+		<description>호루스의 눈을 설치하여 잃어버린 눈을 대체합니다.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CuriosityBot_TribalEye</ThingDef>
+			<HediffDef>CuriosityBot_TribalEye</HediffDef>
+		</descriptionHyperlinks>
+		
+		<jobString>호루스의 눈 설치 중</jobString>
+		<workAmount>2000</workAmount>
+		
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CuriosityBot_TribalEye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CuriosityBot_TribalEye</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		
+		<addsHediff>CuriosityBot_TribalEye</addsHediff>
+	</RecipeDef>
+
+	<!-- ============================================ -->
+	<!-- 선조의 코 설치 수술 -->
+	<!-- ============================================ -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>CuriosityBot_InstallTribalNose</defName>
+		<label>선조의 코 설치</label>
+		<description>선조의 코를 설치하여 잃어버린 코를 대체합니다.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CuriosityBot_TribalNose</ThingDef>
+			<HediffDef>CuriosityBot_TribalNose</HediffDef>
+		</descriptionHyperlinks>
+		
+		<jobString>선조의 코 설치 중</jobString>
+		<workAmount>1500</workAmount>
+		
+		<skillRequirements>
+			<Medicine>2</Medicine>
+		</skillRequirements>
+		
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CuriosityBot_TribalNose</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CuriosityBot_TribalNose</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<appliedOnFixedBodyParts>
+			<li>Nose</li>
+		</appliedOnFixedBodyParts>
+		
+		<addsHediff>CuriosityBot_TribalNose</addsHediff>
+	</RecipeDef>
+
+	<!-- ============================================ -->
+	<!-- 전사의 턱 설치 수술 -->
+	<!-- ============================================ -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>CuriosityBot_InstallTribalJaw</defName>
+		<label>전사의 턱 설치</label>
+		<description>전사의 턱을 설치하여 잃어버린 턱을 대체합니다.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CuriosityBot_TribalJaw</ThingDef>
+			<HediffDef>CuriosityBot_TribalJaw</HediffDef>
+		</descriptionHyperlinks>
+		
+		<jobString>전사의 턱 설치 중</jobString>
+		<workAmount>2500</workAmount>
+		
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CuriosityBot_TribalJaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CuriosityBot_TribalJaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+		</appliedOnFixedBodyParts>
+		
+		<addsHediff>CuriosityBot_TribalJaw</addsHediff>
+	</RecipeDef>
+
+</Defs>

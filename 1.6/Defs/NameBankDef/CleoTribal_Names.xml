@@ -141,13 +141,80 @@
 				<!-- 터키어 aslan + 나 -->
 
 				<!-- 기존 게임 출연진 -->
-				<li>TribalName(p=0.5)->카미사</li>      <!-- 재보티카바 -->
-				<li>TribalName(p=0.5)->세코이</li>        <!-- 카사바 -->
-				<li>TribalName(p=0.5)->발레리</li>        <!-- 마라쿠야/패션프루트 -->
-				<li>TribalName(p=0.5)->발레르</li>      <!-- 아카시아 -->
-				<li>TribalName(p=0.5)->가벨라</li>      <!-- 세라핌 + 꽃 -->
+				<li>TribalName(p=0.5)->카미사</li>
+				<li>TribalName(p=0.5)->세코이</li>
+				<li>TribalName(p=0.5)->발레리</li>       
+				<li>TribalName(p=0.5)->발레르</li>      
+				<li>TribalName(p=0.5)->가벨라</li>
 				<li>TribalName(p=0.5)->레오나</li>
+				<li>TribalName(p=0.5)->비비안</li>
+				<li>TribalName(p=0.5)->비라</li>
+				<li>TribalName(p=0.5)->비라냐</li>
+				<li>TribalName(p=0.5)->세타</li>
 				
+
+				<li>TribalName(p=0.5)->올레시아</li>
+				<li>TribalName(p=0.5)->테레사</li>
+				<li>TribalName(p=0.5)->브리아나</li>
+				<li>TribalName(p=0.5)->안리</li>
+				<li>TribalName(p=0.5)->레이지</li>
+				<li>TribalName(p=0.5)->배리</li>
+
+				<li>TribalName(p=0.5)->아이리스</li>
+				<li>TribalName(p=0.5)->로마</li>
+				<li>TribalName(p=0.5)->모마릿지</li>
+				<li>TribalName(p=0.5)->루마</li>
+				
+				<!-- AI -->
+				
+				<li>TribalName(p=0.5)->제미닌</li>
+				<li>TribalName(p=0.5)->클로에</li>
+				<li>TribalName(p=0.5)->차지피티</li>
+				<li>TribalName(p=0.5)->그로크</li>
+				<li>TribalName(p=0.5)->퍼플렉시</li>
+				<li>TribalName(p=0.5)->시크</li>
+				<li>TribalName(p=0.5)->코파일</li>
+
+				<!-- 한글 이름 -->
+
+				<li>TribalName(p=0.5)->하나</li>
+				<li>TribalName(p=0.5)->두나</li>
+				<li>TribalName(p=0.5)->세나</li>
+				<li>TribalName(p=0.5)->네나</li>
+				<li>TribalName(p=0.5)->오나</li>
+				<li>TribalName(p=0.5)->유나</li>
+				<li>TribalName(p=0.5)->치나</li>
+				<li>TribalName(p=0.5)->파나</li>
+				<li>TribalName(p=0.5)->구나</li>
+
+				<!-- 그리스계 -->
+				
+				<li>TribalName(p=0.5)->알파</li>
+				<li>TribalName(p=0.5)->베타</li>
+				<li>TribalName(p=0.5)->감마</li>
+				<li>TribalName(p=0.5)->델타</li>
+				<li>TribalName(p=0.5)->엡실</li>
+				<li>TribalName(p=0.5)->제타</li>
+				<li>TribalName(p=0.5)->세타</li>
+				<li>TribalName(p=0.5)->이오타</li>
+				<li>TribalName(p=0.5)->카파</li>
+
+				<li>TribalName(p=0.5)->람다</li>
+				<li>TribalName(p=0.5)->뮤</li>
+				<li>TribalName(p=0.5)->뉴</li>
+				<li>TribalName(p=0.5)->크사이</li>
+				<li>TribalName(p=0.5)->오미크</li>
+				<li>TribalName(p=0.5)->파이</li>
+				<li>TribalName(p=0.5)->로</li>
+				<li>TribalName(p=0.5)->시그마</li>
+				<li>TribalName(p=0.5)->타우</li>
+
+				<li>TribalName(p=0.5)->업실</li>
+				<li>TribalName(p=0.5)->파이</li>
+				<li>TribalName(p=0.5)->카이</li>
+				<li>TribalName(p=0.5)->프사이</li>
+				<li>TribalName(p=0.5)->오메가</li>
+
 				<!-- ============================================ -->
 				<!-- 성씨 (Last Names) -->
 				<!-- ============================================ -->
@@ -209,6 +276,26 @@
 				<li>TribalLastName->문댄서</li>
 				<li>TribalLastName->윈드러너</li>
 				<li>TribalLastName->레인메이커</li>
+
+				<!-- 코딩계 -->
+				<li>TribalLastName->제이슨</li>
+				<li>TribalLastName->뱃</li>
+				<li>TribalLastName->아이엔아이</li>
+				<li>TribalLastName->이엑스이</li>
+				<li>TribalLastName->디엘엘</li>
+				<li>TribalLastName->엠셈엘</li>
+				<li>TribalLastName->오지지</li>
+				<li>TribalLastName->피엔지</li>
+				
+				<li>TribalLastName->파이선</li>
+				<li>TribalLastName->시샵</li>
+				<li>TribalLastName->자바</li>
+				<li>TribalLastName->엑셈엘</li>
+				<li>TribalLastName->고</li>
+				<li>TribalLastName->루비</li>
+				<li>TribalLastName->시플플</li>
+				<li>TribalLastName->에이다</li>
+
 				
 			</rulesStrings>
 		</rulePack>

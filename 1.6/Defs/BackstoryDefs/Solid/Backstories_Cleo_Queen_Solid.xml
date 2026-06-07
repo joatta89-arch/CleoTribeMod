@@ -17,13 +17,15 @@
     <skillGains>
       <Social>2</Social>
       <Intellectual>2</Intellectual>
-      <Plants>3</Plants>
+      <Plants>4</Plants>
+		<Animals>1</Animals>
     </skillGains>
     <disallowedTraits>
       <Psychopath>0</Psychopath>
       <Greedy>0</Greedy>
     </disallowedTraits>
     <spawnCategories>
+		<li>Tribal</li>
 		<li>Cleo_Queen</li>
     </spawnCategories>
     <shuffleable>false</shuffleable>
@@ -36,10 +38,11 @@
     <slot>Adulthood</slot>
     <baseDesc>"선택받은 자"라는 꼬리표를 달고 자라며, [PAWN_nameDef]는 원하든 원하지 않든 리더십과 전투술을 배워야 했습니다. 처음에는 황당하고 부담스러웠지만, 시간이 지나며 [PAWN_pronoun]는 진심으로 부족을 사랑하게 되었습니다. 표범 부족과의 전쟁에서 놀라운 용기를 보이며 부족을 승리로 이끌었고, 부족민들은 [PAWN_objective]를 여왕으로 추대했습니다. "배고파서 코코넛을 먹었던 아이"는 이제 클레오 부족의 위대한 여왕이 되었습니다.</baseDesc>
     <skillGains>
-      <Social>4</Social>
-      <Melee>5</Melee>
-      <Shooting>4</Shooting>
-      <Intellectual>2</Intellectual>
+      <Social>5</Social>
+      <Melee>6</Melee>
+		<Shooting>4</Shooting>
+		<Intellectual>3</Intellectual>
+		<Animals>3</Animals>
     </skillGains>
     <forcedTraits>
       <Kind>0</Kind>
@@ -55,6 +58,8 @@
       <li>Violent</li>
     </requiredWorkTags>
     <spawnCategories>
+		<li>Tribal</li>
+		<li>Cult</li>
 		<li>Cleo_Queen</li>
     </spawnCategories>
     <shuffleable>false</shuffleable>

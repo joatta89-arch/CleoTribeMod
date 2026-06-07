@@ -7,7 +7,7 @@
 		<isPlayer>true</isPlayer>
 		<pawnSingular>부족민</pawnSingular>
 		<pawnsPlural>부족민들</pawnsPlural>
-		<basicMemberKind>Cleo_Tribal_Member</basicMemberKind>
+		<basicMemberKind>Cleo_Tribal_Queen</basicMemberKind>
 		<techLevel>Neolithic</techLevel>
 		<backstoryCategories>
 			<li>Tribal</li>

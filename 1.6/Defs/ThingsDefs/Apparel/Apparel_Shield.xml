@@ -18,7 +18,7 @@
 			<stuffCategories>
 				<li>Leathery</li>
 			</stuffCategories>
-			<costStuffCount>10</costStuffCount>
+			<costStuffCount>20</costStuffCount>
 
 			<!-- 추가 비용 (나무 자루) -->
 			<costList>
@@ -48,7 +48,6 @@
 					<li>CuriosityBot_Spot</li>
 					<li>CraftingSpot</li>
 					<li>FueledSmithy</li>
-					<!-- 커스텀 작업대 defName도 가능 -->
 				</recipeUsers>
 	        </recipeMaker>
 
@@ -94,6 +93,11 @@
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		</recipeMaker>
 		
 	</ThingDef>

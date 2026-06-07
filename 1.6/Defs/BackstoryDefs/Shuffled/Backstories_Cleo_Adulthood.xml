@@ -37,6 +37,7 @@
 		<Social>6</Social>
 		<Artistic>5</Artistic>
 		<Intellectual>2</Intellectual>
+		<Animals>2</Animals>
 	</skillGains>
 	<requiredWorkTags>
 		<li>Social</li>
@@ -60,6 +61,7 @@
 		<Medicine>4</Medicine>
 		<Plants>4</Plants>
 		<Intellectual>1</Intellectual>
+		<Animals>2</Animals>
 	</skillGains>
 	<requiredWorkTags>
 		<li>Caring</li>
@@ -162,7 +164,7 @@
 	<titleShort>조련사</titleShort>
 	<baseDesc>[PAWN_nameDef]는 밀림의 가장 위험한 짐승들조차 길들일 수 있는 신비한 능력을 가졌습니다. 재규어, 아나콘다, 심지어 야생 원숭이 무리까지도 [PAWN_possessive] 명령을 따르며, 부족민들은 [PAWN_objective]를 야수의 여왕이라 부릅니다.</baseDesc>
 	<skillGains>
-		<Animals>5</Animals>
+		<Animals>8</Animals>
 		<Melee>2</Melee>
 		<Medicine>1</Medicine>
 	</skillGains>

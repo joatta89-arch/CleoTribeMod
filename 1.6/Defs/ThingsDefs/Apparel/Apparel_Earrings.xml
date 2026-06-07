@@ -10,6 +10,7 @@
 	  <graphicData>
 		  <texPath>Things/Apparel/EarringsA_Icon</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.5</drawSize>
 		  <color>(255, 255, 255)</color>
 	  </graphicData>
 
@@ -54,14 +55,16 @@
 			<li>EyeCover</li>
 		</layers>
 		<countsAsClothingForNudity>false</countsAsClothingForNudity>
-		<wornGraphicPath>Things/Apparel/EarringsA/EarringsA</wornGraphicPath>
+		<wornGraphicPath>Things/Apparel/Earrings/EarringsA</wornGraphicPath>
 		<useWornGraphicMask>false</useWornGraphicMask>
 		<tags>
 			<li>Cleo_Apparel</li>
 		</tags>
 		
     </apparel>
-		
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
 		
 		<recipeMaker>
 			<researchPrerequisite>CuriosityBot_Temple</researchPrerequisite>
@@ -79,4 +82,160 @@
 		
   </ThingDef>
 	
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>CuriosityBot_EarringB</defName>
+		<label>부족 전사 귀걸이</label>
+		<description>부족에서 비밀스럽게 전승되어오는 기술로 제작된 귀걸이입니다. 특별한 기술덕에 귀걸이 임에도 눈을 보호하는 효과가 있습니다.주로 부족 내부에서 입지가 어느정도 있고 전투경험도 있는 성인 전사들이 약간 무리해서 구매하는 장식입니다. 종종 권위있는 어른의 아이가 착용하고 있는 모습도 발견됩니다.</description>
+
+		<graphicData>
+			<texPath>Things/Apparel/EarringsB_Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+
+		<statBases>
+
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.01</Mass>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+			<EquipDelay>0.4</EquipDelay>
+		</statBases>
+
+
+		<apparel>
+			<developmentalStageFilter>Adult,Child</developmentalStageFilter>
+
+			<drawData>
+
+				<defaultData>
+					<layer>66</layer>
+				</defaultData>
+				<dataNorth>
+					<layer>63</layer>
+				</dataNorth>
+
+			</drawData>
+
+			<bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<layers>
+				<li>EyeCover</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<wornGraphicPath>Things/Apparel/Earrings/EarringsB</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<tags>
+				<li>Cleo_Apparel</li>
+			</tags>
+
+		</apparel>
+
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		
+		<recipeMaker>
+			<researchPrerequisite>CuriosityBot_Temple</researchPrerequisite>
+			<recipeUsers>
+				<li>CuriosityBot_Spot</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+
+
+
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+
+	</ThingDef>
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>CuriosityBot_EarringC</defName>
+		<label>부족 엘리트 귀걸이</label>
+		<description>부족에서 비밀스럽게 전승되어오는 기술로 제작된 귀걸이입니다. 특별한 기술덕에 귀걸이 임에도 눈을 보호하는 효과가 있습니다.부족 내부에서 엘리트들이 착용하는 귀걸이입니다. 타 문명에서는 귀족들이 착용하지만 부족 문명에서는 상급 전사 혹은 사제, 제사장과 같은 검증된 자에게 주는 훈장과 비슷한 지위를 가집니다. 종종 권위있는 어른의 아이가 착용하고 있는 모습도 발견됩니다.</description>
+		
+		<graphicData>
+			<texPath>Things/Apparel/EarringsC_Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+
+		<costList>
+			<Gold>100</Gold>
+		</costList>
+		<statBases>
+
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.01</Mass>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<Insulation_Heat>1</Insulation_Heat>
+			<EquipDelay>0.4</EquipDelay>
+		</statBases>
+
+
+		<apparel>
+			<developmentalStageFilter>Adult,Child</developmentalStageFilter>
+
+			<drawData>
+
+				<defaultData>
+					<layer>66</layer>
+				</defaultData>
+				<dataNorth>
+					<layer>63</layer>
+				</dataNorth>
+
+			</drawData>
+
+			<bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<layers>
+				<li>EyeCover</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<wornGraphicPath>Things/Apparel/Earrings/EarringsC</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<tags>
+				<li>Cleo_Apparel</li>
+			</tags>
+
+		</apparel>
+		
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+
+		<recipeMaker>
+			<researchPrerequisite>CuriosityBot_Temple</researchPrerequisite>
+			<recipeUsers>
+				<li>CuriosityBot_Spot</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+
+
+
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+
+	</ThingDef>
 </Defs>

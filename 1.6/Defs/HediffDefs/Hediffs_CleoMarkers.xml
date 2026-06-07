@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--
+    ================================================================
+    Cleo_BloodmixHeritage — 클레오 모계 혼혈 유산 (히든 마커)
+    ================================================================
+    [목적]
+        클레오 모계(Cleo_Tribal / Cleo_TribalQueen / Cleo_Leopard) 폰이
+        이종 부계(비클레오)와의 사이에서 자녀를 낳을 때 부여되는 히든 헤디프.
+        네안데르탈인 Y염색체 소멸 가설을 게임화한 시스템:
+        이종 부계의 Y염색체는 소멸하지만, 면역력 등 유전적 혜택은 세대를 거쳐 누적된다.
+
+    [세대 누적 방식]
+        C# 에서 Severity 값으로 세대를 추적함.
+        severity 0.2 = 1세대, 0.4 = 2세대, ..., 1.0 = 5세대 (상한선)
+
+    [히든 처리]
+        hediffClass: CleoTribe.Hediff_CleoBloodmixHeritage
+        → Visible 프로퍼티를 false 로 오버라이드하여 건강탭 미표시.
+        → Stat 효과는 정상 적용됨.
+
+    [클레오 부계와의 자녀]
+        C# 조건 불충족 → 헤디프 미부여 → 자연적으로 0세대로 태어남.
+    ================================================================
+    -->
+
+    <HediffDef>
+        <defName>Cleo_BloodmixHeritage</defName>
+        <label>bloodmix heritage</label>
+        <description>Hidden genetic marker. Each generation of Cleo matrilineal descent from a non-Cleo sire accumulates immunological benefits — an echo of ancient hybridization.</description>
+        <hediffClass>CleoTribe.Hediff_CleoBloodmixHeritage</hediffClass>
+
+        <!-- 마커 전용: 부정적 효과 없음 -->
+        <isBad>false</isBad>
+
+        <!-- 게임 내 자연 소멸 방지 (영구 유지) -->
+        <everCurableByItem>false</everCurableByItem>
+
+        <!-- Severity 상한선 1.0 (5세대) -->
+        <maxSeverity>1.0</maxSeverity>
+
+        <stages>
+
+            <!--
+                Stage 0 — 기준선 (severity 0.0 ~ 0.19)
+                실제로 이 구간은 C# 에서 부여하지 않음.
+                방어 코드 용도.
+            -->
+            <li>
+                <minSeverity>0.0</minSeverity>
+                <label>bloodmix heritage (dormant)</label>
+            </li>
+
+            <!--
+                Stage 1 — 1세대 혼혈 유산 (severity 0.2)
+                면역력 획득 속도 +10%
+            -->
+            <li>
+                <minSeverity>0.2</minSeverity>
+                <label>bloodmix heritage I</label>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+
+            <!--
+                Stage 2 — 2세대 혼혈 유산 (severity 0.4)
+                면역력 획득 속도 +20%
+            -->
+            <li>
+                <minSeverity>0.4</minSeverity>
+                <label>bloodmix heritage II</label>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.20</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+
+            <!--
+                Stage 3 — 3세대 혼혈 유산 (severity 0.6)
+                면역력 획득 속도 +30%
+            -->
+            <li>
+                <minSeverity>0.6</minSeverity>
+                <label>bloodmix heritage III</label>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.30</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+
+            <!--
+                Stage 4 — 4세대 혼혈 유산 (severity 0.8)
+                면역력 획득 속도 +40%
+            -->
+            <li>
+                <minSeverity>0.8</minSeverity>
+                <label>bloodmix heritage IV</label>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.40</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+
+            <!--
+                Stage 5 — 5세대 혼혈 유산 (severity 1.0) — 최대 단계
+                면역력 획득 속도 +50%
+            -->
+            <li>
+                <minSeverity>1.0</minSeverity>
+                <label>bloodmix heritage V</label>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.50</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+
+        </stages>
+    </HediffDef>
+
+</Defs>

@@ -1,9 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<WeaponClassDef>
-		<defName>TribalRangedWeapon</defName>
-		<label>tribal ranged weapon</label>
-	</WeaponClassDef>
+
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>CuriosityBot_Iklwa_Thrown</defName>
+		<label>이클와</label>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponRanged/CuriosityBot_Iklwa_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
 	
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>CuriosityBot_Iklwa</defName>
@@ -40,15 +52,11 @@
     </statBases>
 
 	  <weaponTags>
-		  <li>NeolithicRangedHeavy</li>
+		  <li>TribalShieldCompatible</li>
 		  <li>CleoTribalWeapon</li>
-		  <li>TribalShieldCompatible</li>  
+		  <li>NeolithicRangedDecent</li>
 	  </weaponTags>
-
-	  <weaponClasses>
-		  <li>TribalRangedWeapon</li>
-	  </weaponClasses>
-
+	  
     <recipeMaker>
 	<researchPrerequisite>CuriosityBot_Basic</researchPrerequisite>
       <skillRequirements>
@@ -92,21 +100,7 @@
 	  
   </ThingDef>
 
-  <ThingDef ParentName="BaseProjectileNeolithic">
-    <defName>CuriosityBot_Iklwa_Thrown</defName>
-    <label>이클와</label>
-    <graphicData>
-      <texPath>Things/Equipment/WeaponRanged/CuriosityBot_Iklwa_Thrown</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>RangedStab</damageDef>
-      <damageAmountBase>20</damageAmountBase>
-      <stoppingPower>2.5</stoppingPower>
-      <armorPenetrationBase>0.25</armorPenetrationBase>
-      <speed>25</speed>
-    </projectile>
-  </ThingDef>
+
 	
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>CuriosityBot_Iklwa_Bokbok</defName>
@@ -146,10 +140,6 @@
 		<weaponTags>
 			<li>TribalShieldCompatible</li>
 		</weaponTags>
-
-		<weaponClasses>
-			<li>TribalRangedWeapon</li>
-		</weaponClasses>
 
 		<!-- 생체코딩 -->
 		<comps>

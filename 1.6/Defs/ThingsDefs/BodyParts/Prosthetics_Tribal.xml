@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ============================================ -->
+	<!-- 클레오 부족 원시 보철물 - 아이템 정의 -->
+	<!-- ============================================ -->
+
+	<!-- 공통 부모 정의 -->
+	<ThingDef Name="CuriosityBot_BodyPartBase" ParentName="BodyPartBase" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<thingCategories>
+			<li>BodyParts</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<tradeTags>
+			<li>Prosthetic</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ============================================ -->
+	<!-- 호루스의 눈 - 원시 의안 -->
+	<!-- ============================================ -->
+	<ThingDef ParentName="CuriosityBot_BodyPartBase">
+		<defName>CuriosityBot_TribalEye</defName>
+		<label>호루스의 눈</label>
+		<description>고대 부족의 제사장들이 전승해온 기술로 만들어진 의안입니다. 금박을 입힌 나무 구슬에 신비로운 문양이 새겨져 있습니다.\n\n완벽한 시력을 되찾을 수는 없지만, 잃어버린 눈을 대신하기에는 충분합니다.\n\n"태양신의 눈이 그대를 인도하리라" - 부족의 기도문</description>
+		
+		<graphicData>
+			<texPath>Things/Item/BodyParts/TribalEye</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>0.1</Mass>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		
+		<costList>
+			<WoodLog>30</WoodLog>
+			<Gold>5</Gold>
+		</costList>
+		
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>CuriosityBot_Spot</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ============================================ -->
+	<!-- 선조의 코 - 원시 의코 -->
+	<!-- ============================================ -->
+	<ThingDef ParentName="CuriosityBot_BodyPartBase">
+		<defName>CuriosityBot_TribalNose</defName>
+		<label>선조의 코</label>
+		<description>섬세하게 조각된 나무에 가죽으로 마감한 의코입니다. 부족 장인들이 한땀한땀 정성을 다해 만들었습니다.\n\n냄새는 잘 못 맡지만, 외관상 결손을 가려주는 데는 효과적입니다.\n\n"조상님의 숨결이 깃든 코로다" - 부족 장인의 말</description>
+		
+		<graphicData>
+			<texPath>Things/Item/BodyParts/TribalNose</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.05</Mass>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>CuriosityBot_Spot</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ============================================ -->
+	<!-- 전사의 턱 - 원시 의턱 -->
+	<!-- ============================================ -->
+	<ThingDef ParentName="CuriosityBot_BodyPartBase">
+		<defName>CuriosityBot_TribalJaw</defName>
+		<label>전사의 턱</label>
+		<description>단단한 나무를 깎아 만든 턱 보철물입니다. 가죽 스트랩으로 머리에 고정하며, 금속 장식이 달려 있습니다.\n\n씹는 기능은 제한적이지만, 말하는 것과 위엄있는 외관을 유지하는 데는 도움이 됩니다.\n\n"전투에서 턱을 잃은 전사는 새 턱과 함께 새 삶을 얻는다" - 부족의 격언</description>
+		
+		<graphicData>
+			<texPath>Things/Item/BodyParts/TribalJaw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>0.3</Mass>
+			<MarketValue>200</MarketValue>
+		</statBases>
+		
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>CuriosityBot_Spot</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ============================================ -->
+	<!-- 클레오 부족 원시 보철물 - Hediff 정의 -->
+	<!-- 신체에 설치됐을 때의 효과 -->
+	<!-- ============================================ -->
+
+	<!-- ============================================ -->
+	<!-- 호루스의 눈 - 시력 50% -->
+	<!-- ============================================ -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>CuriosityBot_TribalEye</defName>
+		<label>호루스의 눈</label>
+		<description>금박을 입힌 나무로 만든 원시적인 의안입니다. 완벽하지는 않지만 어느 정도의 시야를 제공합니다.</description>
+		<labelNoun>원시 의안</labelNoun>
+		
+		<defaultLabelColor>(0.8, 0.72, 0.04)</defaultLabelColor>
+		
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.5</partEfficiency>
+		</addedPartProps>
+		
+		<spawnThingOnRemoved>CuriosityBot_TribalEye</spawnThingOnRemoved>
+	</HediffDef>
+
+	<!-- ============================================ -->
+	<!-- 선조의 코 - 기능보다 외관 복구용 -->
+	<!-- ============================================ -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>CuriosityBot_TribalNose</defName>
+		<label>선조의 코</label>
+		<description>나무와 가죽으로 만든 원시적인 의코입니다. 냄새를 맡는 기능은 제한적이지만 외관을 복구해줍니다.</description>
+		<labelNoun>원시 의코</labelNoun>
+		
+		<defaultLabelColor>(0.72, 0.55, 0.35)</defaultLabelColor>
+		
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.3</partEfficiency>
+		</addedPartProps>
+		
+		<spawnThingOnRemoved>CuriosityBot_TribalNose</spawnThingOnRemoved>
+	</HediffDef>
+
+	<!-- ============================================ -->
+	<!-- 전사의 턱 - 먹기/말하기 50% -->
+	<!-- ============================================ -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>CuriosityBot_TribalJaw</defName>
+		<label>전사의 턱</label>
+		<description>나무와 금속으로 만든 원시적인 의턱입니다. 씹고 말하는 기능이 제한적이지만, 결손된 턱을 대체합니다.</description>
+		<labelNoun>원시 의턱</labelNoun>
+		
+		<defaultLabelColor>(0.65, 0.65, 0.65)</defaultLabelColor>
+		
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.5</partEfficiency>
+		</addedPartProps>
+		
+		<spawnThingOnRemoved>CuriosityBot_TribalJaw</spawnThingOnRemoved>
+	</HediffDef>
+
+</Defs>

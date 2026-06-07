@@ -6,7 +6,7 @@
 		<label>선조의 화덕</label>
 		<description>불씨가 꺼진 모닥불 주변에 원시적인 도구와 재료들이 놓여 있습니다. 부족의 장인들은 이곳에서 선조들의 방식 그대로 무기와 도구를 제작합니다.
 		"불은 꺼져도 기술은 이어진다" - 부족 장인의 격언</description>
-		<thingClass>Building_WorkTable</thingClass>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Production/Spot/Spot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -14,7 +14,11 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
-		<surfaceType>Item</surfaceType>
+		
+		<!-- 건설 비용 -->
+		<costList>
+			<WoodLog>100</WoodLog>
+		</costList>
 		
 		<statBases>
 			<WorkToBuild>800</WorkToBuild>
@@ -23,7 +27,9 @@
 		
 		<scatterableOnMapGen>false</scatterableOnMapGen>
 		<useHitPoints>false</useHitPoints>
+		
 		<size>(1,1)</size>
+		
 		<designationCategory>Production</designationCategory>
 		<uiOrder>2001</uiOrder>
 		<uiIconScale>0.85</uiIconScale>
@@ -31,6 +37,7 @@
 		<pathCost>50</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
@@ -61,10 +68,7 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		
-		<!-- 건설 비용 -->
-		<costList>
-			<WoodLog>100</WoodLog>
-		</costList>
+
 		
 		<!-- 건설 필요 스킬 -->
 		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>

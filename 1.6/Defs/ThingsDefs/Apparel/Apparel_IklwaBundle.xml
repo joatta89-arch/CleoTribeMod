@@ -5,8 +5,6 @@
 	<ThingDef ParentName="BaseProjectileNeolithic">
 		<defName>CuriosityBot_IklwaBundle_Thrown</defName>
 		<label>휴대용 이클와</label>
-
-		<!-- 그래픽 (기존 이클와 재사용 가능) -->
 		<graphicData>
 			<texPath>Things/Equipment/WeaponRanged/CuriosityBot_Iklwa_Thrown</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -17,10 +15,11 @@
 			<damageDef>RangedStab</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>2.5</stoppingPower>
-			<armorPenetrationBase>0.25</armorPenetrationBase>
-			<speed>25</speed>
-			<!-- 약간 더 빠르게 (균형잡힌 설계) -->
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<speed>50</speed>
+
 		</projectile>
+		
 	</ThingDef>
 	
 	<!-- 이클와 다발 - 벨트 슬롯 투척 무기 -->
@@ -41,6 +40,7 @@
 		
 		<!-- 스탯 -->
 		<statBases>
+			<WorkToMake>2000</WorkToMake>
 			<Mass>1.2</Mass>
 			<EquipDelay>0.5</EquipDelay>
 			<MarketValue>45</MarketValue>
@@ -108,9 +108,9 @@
 				<label>이클와 투척</label>
 				<hasStandardCommand>true</hasStandardCommand>
 				<targetable>true</targetable>
-				<onlyManualCast>True</onlyManualCast>
+				<onlyManualCast>true</onlyManualCast>
 				<range>24</range>
-				<warmupTime>1.5</warmupTime>
+				<warmupTime>1.0</warmupTime>
 				<defaultProjectile>CuriosityBot_IklwaBundle_Thrown</defaultProjectile>
 				<soundCast>CuriosityBot_IklwaThrown</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
@@ -130,6 +130,7 @@
 		</comps>
 		
 		<!-- 제작 레시피 -->
+
 		<recipeMaker>
 			<researchPrerequisite>CuriosityBot_Combat</researchPrerequisite>
 			<recipeUsers>
